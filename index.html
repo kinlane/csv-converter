@@ -30,7 +30,7 @@
 
         if($oAuth_Token!='')
             {
-            document.getElementById('uploadfilename').value = $oAuth_Token;    
+            document.getElementById('oAuth_Token').value = $oAuth_Token;    
             document.getElementById("login").style.display = 'none';
             }  
         else
@@ -74,13 +74,13 @@
         }); 
         
         if($UploadJSONName!=''){
-            //alert("Writing: " + $UploadJSONName);
+            alert($UploadJSONName + ' has been saved to master branch in this Github repo');
             repo.write('master',$UploadJSONName, $DataOutput, 'Saving JSON Input for ' + $UploadJSONName, function(err) {});
             }
         if($UploadXMLName!=''){
-            //alert("Writing: " + $UploadXMLName);
+            alert($UploadXMLName + ' has been saved to master branch in this Github repo');
             repo.write('master',$UploadXMLName, $DataOutput, 'Saving XML Input for ' + $UploadXMLName, function(err) {});}
-            }
+        }
         
     </script>     
 
