@@ -17,20 +17,12 @@ function DataConverter(nodeId) {
   this.node                   = $("#"+nodeId);
 
   this.outputDataTypes        = [
-                                {"text":"Actionscript",           "id":"as",               "notes":""},
-                                {"text":"ASP/VBScript",           "id":"asp",              "notes":""},
-                                {"text":"HTML",                   "id":"html",             "notes":""},
-                                {"text":"JSON - Properties",      "id":"json",             "notes":""},
-                                {"text":"JSON - Column Arrays",   "id":"jsonArrayCols",    "notes":""},
-                                {"text":"JSON - Row Arrays",      "id":"jsonArrayRows",    "notes":""},
-                                {"text":"MySQL",                  "id":"mysql",            "notes":""},
-                                {"text":"PHP",                    "id":"php",              "notes":""},
-                                {"text":"Python - Dict",          "id":"python",           "notes":""},
-                                {"text":"Ruby",                   "id":"ruby",             "notes":""},
-                                {"text":"XML - Properties",       "id":"xmlProperties",    "notes":""},
-                                {"text":"XML - Nodes",            "id":"xml",              "notes":""},
-                                {"text":"XML - Illustrator",      "id":"xmlIllustrator",   "notes":""}];
-  this.outputDataType         = "json";
+                                {"text":"Select Conversion Type","id":"none","notes":""},
+                                {"text":"HTML","id":"html","notes":""},
+                                {"text":"JSON","id":"json","notes":""},
+                                {"text":"XML","id":"xml","notes":""}
+                                ];
+  this.outputDataType         = "none";
 
   this.columnDelimiter        = "\t";
   this.rowDelimiter           = "\n";
@@ -50,7 +42,7 @@ function DataConverter(nodeId) {
 
   this.commentLine            = "//";
   this.commentLineEnd         = "";
-  this.tableName              = "MrDataConverter"
+  this.tableName              = "CSVConverter"
 
   this.useUnderscores         = true;
   this.headersProvided        = true;
@@ -169,7 +161,7 @@ DataConverter.prototype.convert = function() {
 
 
 DataConverter.prototype.insertSampleData = function() {
-  this.inputTextArea.val("NAME\tVALUE\tCOLOR\tDATE\nAlan\t12\tblue\tSep. 25, 2009\nShan\t13\t\"green\tblue\"\tSep. 27, 2009\nJohn\t45\torange\tSep. 29, 2009\nMinna\t27\tteal\tSep. 30, 2009");
+  this.inputTextArea.val("NAME\tVALUE\tCOLOR\tDATE\nBob\t12\tblue\tSep. 25, 2013\nMary\t13\t\"green\tblue\"\tSep. 27, 2013\nJohn\t45\torange\tSep. 29, 2013\nMinna\t27\tteal\tSep. 30, 2013");
 }
 
 

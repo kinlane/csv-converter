@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>CSV Converter</title>
+  <meta name="author" content="Shan Carter">
+  <!-- Date: 2010-08-26 -->
+  <link rel="stylesheet" href="css/converter.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/CSVParser.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/DataGridRenderer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/converter.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/Controller.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/upload.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/oauth.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/github.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/utilities.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+    
+<h1>Authentication</h1>
+
+<script type="text/javascript"> 
+
+    OAuth.initialize('I_TRiPFUBHSp-3DxS5RjS9ub8sg');
+    OAuth.callback('github', function(err, result) {
+        
+        $oAuth_Token = result.access_token;
+        
+        redirectURL = "http://laneworks.net/csv-converter/index.html?oAuth_Token=" + $oAuth_Token;
+        
+        location.href = redirectURL;
+
+        });
+</script>             
+</body>
+</html>

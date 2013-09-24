@@ -39,8 +39,7 @@ body {
 	overflow: auto;
 }
 #header a {
-	color: #99FFFF;
-/*  opacity: 0.7;*/
+	color: #FFFFFF;
 }
 
 #header p {
@@ -101,7 +100,7 @@ p {
 	position: absolute;
 	top: 15px;
 	left: 330px;
-	border-color:#000000 #666666 #666666 #000000;
+	border-color:#000000 #000000 #000000 #000000;
   border-style:solid;
   border-width:2px;
 }
@@ -114,17 +113,14 @@ p.dataHeaders{
 
 .textInputs {
   
-  background-color: #C9B7C7;
+  background-color: #FFFFFF;
   border: none;
-  color: #664D63;
+  color: #000000;
   font-family: monospace;
   font-size: 12px;
   height: 300px;
   line-height: 18px;
   padding: 10px;
-  text-shadow: #DED4DD 0px 1px 0px;
-  -webkit-box-shadow: #333 1px 1px 10px inset;
-  -moz-box-shadow: #333 1px 1px 10px inset;
 }
 
 
@@ -132,8 +128,7 @@ p.dataHeaders{
   width: 100%;
   color: #FFF;
   height: 45px;
-  background-color:#5F255C;
-  background-image: url('../images/header_gradient.png');
+  background-color:#000000;
 }
 
 
@@ -146,7 +141,7 @@ p.groupHeadline {
 }
 
 .groupHeader a {
-  color: #FF66FF;
+  color: #FFFFFF;
 }
 
 

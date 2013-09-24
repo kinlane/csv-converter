@@ -15,9 +15,77 @@
   <script src="js/converter.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/Controller.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/upload.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/oauth.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/github.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/utilities.js" type="text/javascript" charset="utf-8"></script>  
+
+  <script type="text/javascript" charset="utf-8"> 
+    
+    function authenticated()
+        {
+        $oAuth_Token = getUrlVar('oAuth_Token'); 
+
+        if($oAuth_Token!='')
+            {
+            document.getElementById('uploadfilename').value = $oAuth_Token;    
+            document.getElementById("login").style.display = 'none';
+            }  
+        else
+            {
+            document.getElementById("save").style.display = 'none';
+            document.getElementById("login").style.display = '';
+            }                       
+        }
+    
+    function saveConversion()
+        {
+    
+        var github = new Github({
+            token: $oAuth_Token,
+            auth: "oauth"
+                });
+                
+        $UploadCSVName = "";
+        $UploadJSONName = "";
+        $UploadXMLName = "";
+      
+        $UploadFileName = document.getElementById("uploadfilename").value;
+        $UploadCSVName = $UploadFileName;
+        $DataSelector = document.getElementById("dataSelector").value;
+        
+        //alert($DataSelector);
+        if($DataSelector=="xml") {
+          $UploadXMLName = $UploadFileName.replace(".csv",".xml");  
+        }
+        
+        if($DataSelector=="json") {
+          $UploadJSONName = $UploadFileName.replace(".csv",".json");  
+        }
+        
+        $CSVOutput = document.getElementById("dataInput").value;
+        $DataOutput = document.getElementById("dataOutput").value;
+      
+        var repo = github.getRepo('kinlane', 'csv-converter'); 
+        repo.write('master',$UploadCSVName, $CSVOutput, 'Saving CSV Input for ' + $UploadCSVName, function(err) {
+            
+        }); 
+        
+        if($UploadJSONName!=''){
+            //alert("Writing: " + $UploadJSONName);
+            repo.write('master',$UploadJSONName, $DataOutput, 'Saving JSON Input for ' + $UploadJSONName, function(err) {});
+            }
+        if($UploadXMLName!=''){
+            //alert("Writing: " + $UploadXMLName);
+            repo.write('master',$UploadXMLName, $DataOutput, 'Saving XML Input for ' + $UploadXMLName, function(err) {});}
+            }
+        
+    </script>     
 
 </head>
-<body>
+<body onload="authenticated();">
   <div id='base'>
     <div id='header'>
       <div id="description">
@@ -52,9 +120,17 @@
           <br />
           <p><label>Upload CSV:</label></p>
           <div class="settingsGroup">
+            <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
+            <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
             <p><input type="file" onchange="readfile(this.files[0])"></input></p>
-          </div>          
-
+          </div>     
+          <br />  
+          <div id="login" style="display: none;">  
+            <p align="center"><a href="http://laneworks.net/csv-converter/oauth.html">Login</a></p>
+          </div>
+          <div id="save" style="display: none;"> 
+            <p align="center"><a href="#" onclick="saveConversion();">Save</a></p>
+          </div>    
         </form>
 
       </div>
