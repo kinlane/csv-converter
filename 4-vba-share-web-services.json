@@ -1,0 +1,417 @@
+[{"Web Service":"AddressWebService","Service Desc.":"N/A","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllPtcpntAddrsByPtcpntId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"AddressWebService","Service Desc.":"N/A","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPtcpntAddrs ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"AddressWebService","Service Desc.":"N/A","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllPtcpntAddrsByFileNumber ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"AddressWebService","Service Desc.":"N/A","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPtcpntAddrsByPtcpntAddrsId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"AwardWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findVeteranAwardCmpsitBySSN ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"AwardWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findVeteranAwardCmpsitByFileNumber ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"AwardWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findVeteranAwardCmpsitByPtcpntId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"AwardWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findStationOfJurisdiction ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"AwardWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAwardBeneByPtcpntVetId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimWebService","Service Desc.":"N/A","Last Changed Date":"10-20-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBnftClaimByPtcpntVetId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimWebService","Service Desc.":"N/A","Last Changed Date":"10-20-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBnftClaim ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimWebService","Service Desc.":"N/A","Last Changed Date":"10-20-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBnftClaimByUserPtcpntId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimWebService","Service Desc.":"N/A","Last Changed Date":"10-20-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBnftClaimByFileNumber ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimService","Service Desc.":"This service provides claims profile data functionality.","Last Changed Date":"10-21-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"insertBenefitClaim ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimService","Service Desc.":"This service provides claims profile data functionality.","Last Changed Date":"10-21-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"updateBenefitClaimAddress ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimService","Service Desc.":"This service provides claims profile data functionality.","Last Changed Date":"10-21-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"updateBenefitClaimDependents ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimService","Service Desc.":"This service provides claims profile data functionality.","Last Changed Date":"10-21-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"updateBenefitClaim ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimService","Service Desc.":"This service provides claims profile data functionality.","Last Changed Date":"10-21-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaim ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimService","Service Desc.":"This service provides claims profile data functionality.","Last Changed Date":"10-21-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaimDetail ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimService","Service Desc.":"This service provides claims profile data functionality.","Last Changed Date":"10-21-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"clearBenefitClaim ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"BenefitClaimService","Service Desc.":"This service provides claims profile data functionality.","Last Changed Date":"10-21-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"cancelBenefitClaim ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPOA","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findFiduciary","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllFiduciaryPoa","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findDependents","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findFlashes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findVBMSFlash","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"addFlash","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"removeFlash","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"updateFlashes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findMonthOfDeath","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAwardAddresses","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAwardMailingAddress","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaimAddresses","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findMailingAddress","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPaymentAddress","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findDepositAccount","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findGeneralInformationByFileNumber","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findGeneralInformationByPtcpntIds","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findOtherAwardInformation","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findIncomeExpense","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findDenialsByPtcpntId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findReasonsByRbaIssueId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ClaimantService","Service Desc.":"This service gets information about a claimant.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findMilitaryRecordByPtcpntId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"DdeftWebService","Service Desc.":"Displays error. Not on UDDI","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findPtcpntDpositAcntByPtcpntDpositAcntId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"DdeftWebService","Service Desc.":"Displays error. Not on UDDI","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllPtcpntDpositAcntByPtcpntId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"DdeftWebService","Service Desc.":"Displays error. Not on UDDI","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllPtcpntDpositAcntByFileNumber","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"DdeftWebService","Service Desc.":"Displays error. Not on UDDI","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBankNameByRoutngTrnsitNbr","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"DdeftWebService","Service Desc.":"Displays error. Not on UDDI","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"updatePtcpntDpositAcnt","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"DdeftWebService","Service Desc.":"Displays error. Not on UDDI","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"insertPtcpntDpositAcnt","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"EbenefitsAddressUpdateService","Service Desc.":"Displays error. Not on UDDI","Last Changed Date":"10-19-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPersonAddressInquiry","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"EbenefitsAddressUpdateService","Service Desc.":"Displays error. Not on UDDI","Last Changed Date":"10-19-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"UpdatePersonAddress","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"EbenefitsBnftClaimStatusService","Service Desc.":"Displays error.","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaimsStatusBySSN","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"EbenefitsBnftClaimStatusService","Service Desc.":"Displays error.","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaimDetailsByBnftClaimId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"EducationWebService","Service Desc.":"Displays error.","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findEducationInstitutionsByState","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"EducationWebService","Service Desc.":"Displays error.","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findEducationInstitutionByCityStateCd","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"EducationWebService","Service Desc.":"Displays error.","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findEducationInstitutionsByCountry","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"EducationWebService","Service Desc.":"Displays error.","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findEducationInstitutionByCityCountry ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"MilitaryWebService","Service Desc.":"N/A","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findMltyPersonBySSN","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"MilitaryWebService","Service Desc.":"N/A","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findMltyPersonByFileNumber","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"MilitaryWebService","Service Desc.":"N/A","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findMltyPersonByPtcpntId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"OrgWebService","Service Desc.":"N/A","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findOrgByPtcpntId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"PaymentHistoryService","Service Desc.":"Displays error.","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPayHistoryBySSN ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"PersonWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPersonBySSN","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"PersonWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPersonByFileNumber","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"PersonWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPersonByPtcpntId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"PersonWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findRelationships","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"PhoneWebService","Service Desc.":"N/A","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllPtcpntPhoneByPtcpntId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"PhoneWebService","Service Desc.":"N/A","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllPtcpntPhoneByByFileNumber ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"RatingService","Service Desc.":"This service provides the Rating Data.","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findRatingData ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"RatingWebService","Service Desc.":"This service provides the Rating Data.","Last Changed Date":"11-04-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"isEligibleChapter35","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"RatingWebService","Service Desc.":"This service provides the Rating Data.","Last Changed Date":"11-04-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findRatingDecnByPtcpntVetId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"RbaWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"reassignRbaPrfil","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"RbaWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"reassignRbaPrfilToUser ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"SecurityWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPtcpntId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"SecurityWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPersonScrtyLog","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"SecurityWebService","Service Desc.":"N/A","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findSntvtyLevel ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPayeeCodes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findStates ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findCountries","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findEpcs","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findMilitaryPostOfficeTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findMilitaryPostalTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findSsnVerificationTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findCauseOfDeathTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findIntakeSites","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findDiagnosticCodes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPcanReasonCodes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPclrReasonCodes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findDiaryReasonCodes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findSsaInquiryReasonCodes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findStationAddress","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findFutureReasons","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findSalutations","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findSuffixes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findGulfWarRegistryPermits","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBranchOfServiceTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPowerOfAttorneys","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findCharacterOfServiceTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findSeparationReasonCodes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findPayGrades","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findGender","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findInsurancePrefixs","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findInsuranceFolderTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findInsurancePolicyPrefixs","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findFolderTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findNoFolderEstablishedReasons","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllStations","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findRegionalOffices","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findNARAs","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findStations","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"ShareStandardDataService","Service Desc.":"These services are intended to return data for combo/list boxes. You will get the code needed for updates and the text to display","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findProgramTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaimTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaimTypeIncrements","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaimTypeIncrement","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findFlashes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findSpecialIssues ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllBenefitClaimTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBenefitClaimLifeCycleStatuses","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findEndProductTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findPayeeTypes","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findRegionalOffices","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllStations","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllStates","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findAllUSStates","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"StandardDataWebService","Service Desc.":"N/A","Last Changed Date":"11-01-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findAllForeignStates ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VeteranWebService","Service Desc.":"N/A","Last Changed Date":"10-27-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findVeteranByFileNumber ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findVeteran","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findVeteranByPtcpntId","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findVeteranByFileNumber","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBirlsRecord","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findBirlsRecordByFileNumber","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findCorporateRecord","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findCorporateRecordByFileNumber","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"syncCorporateBirls","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VetRecordService","Service Desc.":"This service gets Veteran information from corporate and Birls.","Last Changed Date":"10-17-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"findIndex ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VhaWebService","Service Desc.":"N/A","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":" findAllVhaIntrfcPtcpnt","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VhaWebService","Service Desc.":"N/A","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"deleteAllVhaIntrfcPtcpnt ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"},
+{"Web Service":"VhaWebService","Service Desc.":"N/A","Last Changed Date":"10-13-11","Contact":"Cory Easley\n512-326-6316
+cory.easley@va.gov","Methods":"deleteVhaIntrfcPtcpntByPtcpntId ","Dimensions":"Dimensions location for the above services: \nCDD:CDD_XXX  \CorporateDataEJB\src\gov\va\vba\vonapp\services    (Where XXX is the latest version number.)
+BENEFITS:SHARE_2.3  \apps\share\share-ejb\src\gov\va\vba\benefits\share\services"}]
