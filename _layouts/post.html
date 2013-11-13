@@ -1,0 +1,38 @@
+{% include top.html %}
+
+<body class="home blog two-col-left width-940 two-col-left-940">
+    
+  {% include header.html %}
+
+    <div class="page-header">
+      <h3><a href="{{ page.source }}" style="color:#000;">{{ page.title }}</a></h3>
+      <p><i><strong><span class="small">Posted on</span> <span class="post-date">{{ page.date | date:"%m-%d-%Y" }}</span></strong></i></p>
+      <p><a href="http://{{ page.domain }}"><strong>{{ page.domain }}</strong></a></p>
+    </div>
+    <div class="row">
+      <div class="span12">
+        {{ content }}
+        </div>
+    </div>
+    <div class="row" align="center" style="padding-top: 10px; padding-botto: 10px;">
+        <div class="pagination">
+          <ul>
+          {% if page.previous %}
+            <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+          {% else %}
+            <li class="prev disabled"><a>&larr; Previous</a></li>
+          {% endif %}
+            <li><a href="/archive.html">Archive</a></li>
+          {% if page.next %}
+            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+          {% else %}
+            <li class="next disabled"><a>Next &rarr;</a>
+          {% endif %}
+          </ul>
+        </div>
+    </div>
+
+  {% include footer.html %}
+
+</body>
+</html>

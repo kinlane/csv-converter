@@ -1,149 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>CSV Converter</title>
-  <meta name="author" content="Shan Carter">
-  <!-- Date: 2010-08-26 -->
-  <link rel="stylesheet" href="css/converter.css" type="text/css" media="screen" title="no title" charset="utf-8">
-
-  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/CSVParser.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/DataGridRenderer.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/converter.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/Controller.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/upload.js" type="text/javascript" charset="utf-8"></script>
+---
+layout: default
+title: CSV Converter
+overview: true
+---  
   
-  <script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/oauth.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/github.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/utilities.js" type="text/javascript" charset="utf-8"></script>  
+<h1>CSV Converter</h1>
+<p>I wanted to make a stand-alone CSV conversion tool that would run exclusively on Github, allowing anyone in government to fork, upload and manage their open data.</p>
+<p>I wanted this to start with Microsoft Excel, but exporting a spreadsheet as CSV is the basic entry fee for this piece of technology--you have to know how to do this to continue.</p>
+<p>This project runs as a Github Page, building on a Github Repository and is built entirely in JavaScript, which means there is no server backend beyond Github. This allows you to fork and implement without launching your website or servers.</p>
 
-  <script type="text/javascript" charset="utf-8"> 
-    
-    function authenticated()
-        {
-        $oAuth_Token = getUrlVar('oAuth_Token'); 
+<p>I found a really cool, open source CSV converter called Mr. Data Converter. I used this as the base and engineered it to run on Github Pages, then added the ability to login using Github oAuth and save CSV, JSON and XML files locally to the master Github repository behind CSV Converter.</p>
 
-        if($oAuth_Token!='')
-            {
-            document.getElementById('oAuth_Token').value = $oAuth_Token;    
-            document.getElementById("login").style.display = 'none';
-            }  
-        else
-            {
-            document.getElementById("save").style.display = 'none';
-            document.getElementById("login").style.display = '';
-            }                       
-        }
-    
-    function saveConversion()
-        {
-    
-        var github = new Github({
-            token: $oAuth_Token,
-            auth: "oauth"
-                });
-                
-        $UploadCSVName = "";
-        $UploadJSONName = "";
-        $UploadXMLName = "";
-      
-        $UploadFileName = document.getElementById("uploadfilename").value;
-        $UploadCSVName = $UploadFileName;
-        $DataSelector = document.getElementById("dataSelector").value;
-        
-        //alert($DataSelector);
-        if($DataSelector=="xml") {
-          $UploadXMLName = $UploadFileName.replace(".csv",".xml");  
-        }
-        
-        if($DataSelector=="json") {
-          $UploadJSONName = $UploadFileName.replace(".csv",".json");  
-        }
-        
-        $CSVOutput = document.getElementById("dataInput").value;
-        $DataOutput = document.getElementById("dataOutput").value;
-      
-        var repo = github.getRepo('kinlane', 'csv-converter'); 
-        repo.write('master',$UploadCSVName, $CSVOutput, 'Saving CSV Input for ' + $UploadCSVName, function(err) {
-            
-        }); 
-        
-        if($UploadJSONName!=''){
-            alert($UploadJSONName + ' has been saved to master branch in this Github repo');
-            repo.write('master',$UploadJSONName, $DataOutput, 'Saving JSON Input for ' + $UploadJSONName, function(err) {});
-            }
-        if($UploadXMLName!=''){
-            alert($UploadXMLName + ' has been saved to master branch in this Github repo');
-            repo.write('master',$UploadXMLName, $DataOutput, 'Saving XML Input for ' + $UploadXMLName, function(err) {});}
-        }
-        
-    </script>     
+<p>Next I'm working on the ability to manage all the files uploaded, converted and provide more holistic open data management tools that run 100% on Githb.</p> 
 
-</head>
-<body onload="authenticated();">
-  <div id='base'>
-    <div id='header'>
-      <div id="description">
-        <h1>CSV Converter</h1>
-        <p>This tool will convert your Excel data into JSON and XML.</p>
-      </div>
-      <div id='settings'>
-        <h3>Settings</h3>
-        <form id='settingsForm'>
-           <p>Delimiter:
+<p>This is a work in progress, meant to understand how to best design the FDA Recall API, if you have feedback leave comments below.</p>
 
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterAuto'   value="auto" checked/> Auto</label>
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterComma'  value="comma" /> Comma</label>
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterTab'    value="tab" /> Tab</label>
-            </p>
-          <p>Decimal Sign:
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'publicprivatesector'; // required: replace example with your forum shortname
 
-             <label><input class="settingsElement" type="radio" name="decimal" id='decimalDot'   value="dot" checked/> Dot</label>
-             <label><input class="settingsElement" type="radio" name="decimal" id='decimalComma'  value="comma" /> Comma</label>
-            </p>
-          <p><label><input class="settingsElement" type="checkbox" name="" value="" id="headersProvidedCB" checked /> First row is the header</label></p>
-          <div class="settingsGroup">
-            <p>Transform: <label><input class="settingsElement" type="radio" name="headerModifications" value="downcase" id='headersDowncase' /> downcase</label>
-            <label><input class="settingsElement" type="radio" name="headerModifications" id='headersUpcase' value="upcase" /> upcase</label>
-            <label><input class="settingsElement" type="radio" name="headerModifications" id='headersNoTransform' value="none" checked /> none</label></p>
-          </div>
-
-          <p><label><input class="settingsElement" type="checkbox" name="some_name" value="" id="includeWhiteSpaceCB" checked /> Include white space in output</label></p>
-          <div class="settingsGroup">
-            <p>Indent with: <label><input class="settingsElement" type="radio" name="indentType" value="tabs" id='includeWhiteSpaceTabs'/> tabs</label> <label><input class="settingsElement" type="radio" name="indentType" value="spaces" id='includeWhiteSpaceSpaces' checked/> spaces</label></p>
-          </div>
-          <br />
-          <p><label>Upload CSV:</label></p>
-          <div class="settingsGroup">
-            <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
-            <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
-            <p><input type="file" onchange="readfile(this.files[0])"></input></p>
-          </div>     
-          <br />  
-          <div id="login" style="display: none;">  
-            <p align="center"><a href="http://kinlane.github.io/csv-converter/oauth.html">Login</a></p>
-          </div>
-          <div id="save" style="display: none;"> 
-            <p align="center"><a href="#" onclick="saveConversion();">Save</a></p>
-          </div>    
-        </form>
-
-      </div>
-    </div>
-
-
-
-    <div id='converter' class=''>
-
-    </div>
-
-  </div>
-
-
-</body>
-</html>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+ 
+    <hr />
+    <!-- 3scale -->
+    <p align="center">
+        <a href="http://bit.ly/13esk6Q" target="_blank" title="APIs From 3Scale">
+            <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/empowered-by-3scale.png" width="300" style="padding-bottom: 15px;" />
+        </a>        
+    </p>  

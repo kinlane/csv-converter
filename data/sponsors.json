@@ -1,0 +1,45 @@
+{
+    "sponsors": [
+       {
+            "title": "3Scale",
+            "tagline": "API Management",
+            "url": "http://bit.ly/13esk6Q",
+            "logo": "http://kinlane-productions.s3.amazonaws.com/api-service-providers/3scale-logo.jpg",
+            "width": "200",
+             "paddingbottom": "10"
+        },
+        {
+            "title": "APIhub",
+             "tagline": "API Repository",
+            "url": "http://bit.ly/11UQ9dG",
+            "logo": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/mulesoft/APIhub-by-mulesoft.png",
+            "width": "180",
+             "paddingbottom": "15"
+        },                     
+        {
+            "title": "Intel",
+            "tagline": "Enterprise API Management",
+            "url": "http://intel.ly/10rGPjU",
+            "logo": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/intel/intel-api-management-logo.png",
+            "width": "175",
+             "paddingbottom": "15"
+        },
+        {
+            "title": "ProgrammableWeb",
+            "tagline": "API Directory",
+            "url": "http://bit.ly/10rGRbg",
+            "logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist/programmableweb-logo.png",
+            "width": "150",
+             "paddingbottom": "10"
+        },                                                      
+        {
+            "title": "WSO2",
+            "tagline": "Open Source API Management",
+            "url": "http://bit.ly/17KyhtZ",
+            "logo": "https://s3.amazonaws.com/kinlane-productions/api-service-providers/wso2/wso2-logo-white-800X360.jpg",
+            "width": "160",
+             "paddingbottom": "10"
+        }        
+               
+    ]
+}

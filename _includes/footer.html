@@ -1,0 +1,84 @@
+                </div>
+                
+            </div>
+            
+            <div id="sidebar">
+                
+                <div class="widget widget_recent_entries">  
+                    <h3>API Questions</h3>
+                    <p align="center"><a href="http://bit.ly/1dQHdgR" target="_blank"><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" width="125" /></a></p>
+                    <p align="center"><a href="http://bit.ly/1dQHdgR" target="_blank" style="font-size: 16px; font-weight: bold;">Have API Questions?</a></p>
+                </div> 
+                       
+                 <div class="widget widget_recent_entries">  
+                     <h3>Winning in the API Economy</h3>
+                    <table width="250" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center"><a href="http://bit.ly/1cHBhd5" target="_blank"><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/ebook-3scale.png" width="200" style="border: 0px solid #000;" /></a></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><strong><a href="http://bit.ly/1cHBhd5" target="_blank">Download as PDF</a></strong></td>
+                        </tr>
+                    </tbody>
+                    </table>  
+                 </div>                                                      
+                
+                 <div class="widget widget_recent_entries">  
+                     
+                     <h3>API Evangelist Network</h3>
+                 
+                     <p align="center"><a href="/network.html"><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/network/API-Evangelist-Network.png" width="215" /></a></p>
+                    
+                 </div>
+                
+                 <div class="widget widget_recent_entries">  
+                     
+                    <!--- Begin Partners --->
+                    <script id="parterListingTemplate" type="text/template"> 
+                        {% raw  %}  
+                        <a href="{{url}}" target="_blank" title="{{title}}">
+                            <img src="{{logo}}" width="{{width}}" style="padding-bottom: {{paddingbottom}}px;" />
+                        </a>   
+                        {% endraw %}                                                                                                                    
+                    </script>  
+                     
+                    <script type="text/javascript">
+                        function listSponsors()
+                            {
+                            $.getJSON('/fda-recalls/data/sponsors.json', function(data) {               
+                                 $.each(data['sponsors'], function(key, val) {                  
+                                    var template = $('#parterListingTemplate').html();
+                                    var html = Mustache.to_html(template, val);
+                                    $('#partnerListingContainer').append(html);
+                                    });         
+                                });             
+                            }    
+                    </script>
+               
+                    <h3>Partner Sites</h3>
+                    <div id="partnerListingContainer" align="center"><br /><br /> </div>
+                    
+                    <script type="text/javascript">
+                        listSponsors();
+                    </script>                    
+                        
+                </div>  
+                <!--- End Partners --->   
+                                                             
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="footer" class="col-full">
+        <div id="copyright" class="col-left">
+            <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a></p>        
+        </div>
+        <div id="credit" class="col-right">
+            
+        </div>
+    </div>
+    
+</div>
+ 
