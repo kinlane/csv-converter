@@ -8,7 +8,12 @@ function readfile(f) {
         out.innerHTML = "";                          
         out.appendChild(document.createTextNode(text));
         
-        document.getElementById("save").style.display = '';
+        oAuth_Token = document.getElementById('oAuth_Token').value;
+        //alert(oAuth_Token);
+        if(oAuth_Token!='')
+        	{
+        	document.getElementById("save").style.display = '';
+        	}
 
     }
     reader.onerror = function(e) {
