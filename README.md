@@ -1,6 +1,6 @@
-FDA Recall
+CSV Converter
 =======
 
-This is a prototype API design for the FDA Recall API.
+This is a working prototype for a CSV Converter than runs 100% on Github.
 
-Visit site at: [http://kinlane.github.io/fda-recalls](http://kinlane.github.io/fda-recalls).
+Visit site at: [http://csv-converter.publicprivatesector.org](http://csv-converter.publicprivatesector.org).
