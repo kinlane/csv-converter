@@ -69,8 +69,8 @@ DataConverter.prototype.create = function(w,h) {
   var self = this;
 
   //build HTML for converter
-  this.inputHeader = $('<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Input CSV or tab-delimited data. </p></div>');
-  this.inputTextArea = $('<textarea class="textInputs" id="dataInput" style="width: 300px; border: 1px solid #000;"></textarea>');
+  this.inputHeader = $('<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Input CSV or tab-delimited data.</p></div>');
+  this.inputTextArea = $('<textarea class="textInputs" id="dataInput"></textarea>');
   var outputHeaderText = '<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Output as <select name="Data Types" id="dataSelector" >';
     for (var i=0; i < this.outputDataTypes.length; i++) {
 
@@ -81,7 +81,7 @@ DataConverter.prototype.create = function(w,h) {
     };
     outputHeaderText += '</select><span class="subhead" id="outputNotes"></span></p></div>';
   this.outputHeader = $(outputHeaderText);
-  this.outputTextArea = $('<textarea class="textInputs" id="dataOutput" style="width: 300px; border: 1px solid #000;"></textarea>');
+  this.outputTextArea = $('<textarea class="textInputs" id="dataOutput"></textarea>');
 
   this.node.append(this.inputHeader);
   this.node.append(this.inputTextArea);
@@ -124,12 +124,12 @@ DataConverter.prototype.create = function(w,h) {
 
 DataConverter.prototype.resize = function(w,h) {
 
-  var paneWidth = w;
+  var paneWidth = 500;
   var paneHeight = (h-90)/2-20;
 
   this.node.css({width:paneWidth});
-  this.inputTextArea.css({width:500px,height:300px});
-  this.outputTextArea.css({width:500px, height:500px});
+  this.inputTextArea.css({width:paneWidth-20,height:paneHeight});
+  this.outputTextArea.css({width: paneWidth-20, height:paneHeight});
 
 }
 
