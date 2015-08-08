@@ -1,91 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+---
+layout: default
+title: CSV Converter
+overview: true
+---
 
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>CSV Converter</title>
-  <meta name="author" content="Shan Carter">
-  <!-- Date: 2010-08-26 -->
-  <link rel="stylesheet" href="css/converter.css" type="text/css" media="screen" title="no title" charset="utf-8">
-
-  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/CSVParser.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/DataGridRenderer.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/converter.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/Controller.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/upload.js" type="text/javascript" charset="utf-8"></script>
-  
-  <script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/oauth.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/github.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/utilities.js" type="text/javascript" charset="utf-8"></script>  
-
-  <script type="text/javascript" charset="utf-8"> 
-    
-    function authenticated()
-        {
-        $oAuth_Token = getUrlVar('oAuth_Token'); 
-
-        if($oAuth_Token!='')
-            {
-            document.getElementById('oAuth_Token').value = $oAuth_Token;    
-            document.getElementById("login").style.display = 'none';
-            }  
-        else
-            {
-            document.getElementById("save").style.display = 'none';
-            document.getElementById("login").style.display = '';
-            }                       
-        }
-    
-    function saveConversion()
-        {
-    
-        var github = new Github({
-            token: $oAuth_Token,
-            auth: "oauth"
-                });
-                
-        $UploadCSVName = "";
-        $UploadJSONName = "";
-        $UploadXMLName = "";
-      
-        $UploadFileName = document.getElementById("uploadfilename").value;
-        $UploadCSVName = $UploadFileName;
-        $DataSelector = document.getElementById("dataSelector").value;
-        
-        //alert($DataSelector);
-        if($DataSelector=="xml") {
-          $UploadXMLName = $UploadFileName.replace(".csv",".xml");  
-        }
-        
-        if($DataSelector=="json") {
-          $UploadJSONName = $UploadFileName.replace(".csv",".json");  
-        }
-        
-        $CSVOutput = document.getElementById("dataInput").value;
-        $DataOutput = document.getElementById("dataOutput").value;
-      
-        var repo = github.getRepo('kinlane', 'csv-converter'); 
-        repo.write('master',$UploadCSVName, $CSVOutput, 'Saving CSV Input for ' + $UploadCSVName, function(err) {
-            
-        }); 
-        
-        if($UploadJSONName!=''){
-            alert($UploadJSONName + ' has been saved to master branch in this Github repo');
-            repo.write('master',$UploadJSONName, $DataOutput, 'Saving JSON Input for ' + $UploadJSONName, function(err) {});
-            }
-        if($UploadXMLName!=''){
-            alert($UploadXMLName + ' has been saved to master branch in this Github repo');
-            repo.write('master',$UploadXMLName, $DataOutput, 'Saving XML Input for ' + $UploadXMLName, function(err) {});}
-        }
-        
-    </script>     
-
-</head>
-<body onload="authenticated();">
   <div id='base'>
     <div id='header'>
       <div id="description">
@@ -123,14 +41,14 @@
             <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
             <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
             <p><input type="file" onchange="readfile(this.files[0])"></input></p>
-          </div>     
-          <br />  
-          <div id="login" style="display: none;">  
+          </div>
+          <br />
+          <div id="login" style="display: none;">
             <p align="center"><a href="http://kinlane.github.io/csv-converter/oauth.html">Login</a></p>
           </div>
-          <div id="save" style="display: none;"> 
+          <div id="save" style="display: none;">
             <p align="center"><a href="#" onclick="saveConversion();">Save</a></p>
-          </div>    
+          </div>
         </form>
 
       </div>
@@ -143,7 +61,3 @@
     </div>
 
   </div>
-
-
-</body>
-</html>
