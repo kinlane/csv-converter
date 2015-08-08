@@ -172,5 +172,66 @@
 	</div>
 	</noscript>
 
+  <script type="text/javascript" charset="utf-8">
+
+    function authenticated()
+        {
+        $oAuth_Token = getUrlVar('oAuth_Token');
+        if($oAuth_Token!='')
+            {
+            //document.getElementById('oAuth_Token').value = $oAuth_Token;
+            document.getElementById("login").style.display = 'none';
+            }
+        else
+            {
+            //document.getElementById("save").style.display = 'none';
+            document.getElementById("login").style.display = '';
+            }
+        }
+
+    function saveConversion()
+        {
+
+        var github = new Github({
+            token: $oAuth_Token,
+            auth: "oauth"
+                });
+
+        $UploadCSVName = "";
+        $UploadJSONName = "";
+        $UploadXMLName = "";
+
+        $UploadFileName = document.getElementById("uploadfilename").value;
+        $UploadCSVName = $UploadFileName;
+        $DataSelector = document.getElementById("dataSelector").value;
+
+        //alert($DataSelector);
+        if($DataSelector=="xml") {
+          $UploadXMLName = $UploadFileName.replace(".csv",".xml");
+        }
+
+        if($DataSelector=="json") {
+          $UploadJSONName = $UploadFileName.replace(".csv",".json");
+        }
+
+        $CSVOutput = document.getElementById("dataInput").value;
+        $DataOutput = document.getElementById("dataOutput").value;
+
+        var repo = github.getRepo('kinlane', 'csv-converter');
+        repo.write('master',$UploadCSVName, $CSVOutput, 'Saving CSV Input for ' + $UploadCSVName, function(err) {
+
+        });
+
+        if($UploadJSONName!=''){
+            alert($UploadJSONName + ' has been saved to master branch in this Github repo');
+            repo.write('master',$UploadJSONName, $DataOutput, 'Saving JSON Input for ' + $UploadJSONName, function(err) {});
+            }
+        if($UploadXMLName!=''){
+            alert($UploadXMLName + ' has been saved to master branch in this Github repo');
+            repo.write('master',$UploadXMLName, $DataOutput, 'Saving XML Input for ' + $UploadXMLName, function(err) {});}
+        }
+
+    </script>  
+
   </body>
 </html>
