@@ -33,7 +33,7 @@ body {
 /*header*/
 
 #header {
-	
+
 	color: #FFF;
 	width: 300px;
 	overflow: auto;
@@ -112,7 +112,7 @@ p.dataHeaders{
 }
 
 .textInputs {
-  
+
   background-color: #FFFFFF;
   border: none;
   color: #000000;
@@ -125,7 +125,7 @@ p.dataHeaders{
 
 
 .groupHeader{
-  width: 100%;
+  width: 750px;
   color: #FFF;
   height: 45px;
   background-color:#000000;
@@ -150,12 +150,12 @@ p.groupHeadline {
 }
 
 #dataInput {
-	
+
 }
 
 #dataOutput {
 
-	
+
 }
 #dataSelector {
 	width: 200px;
