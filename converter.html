@@ -7,12 +7,12 @@ title: CSV Converter
     <div id='header'>
       <div id="description">
         <h1><a href="http://csv-converter.publicprivatesector.org/">CSV Converter</a></h1>
-        <p>This tool will convert your Excel data into JSON and XML.</p>
+        <p>This tool will convert your CSV or TSV data into JSON and XML.</p>
       </div>
       <div id='settings'>
         <h3>Settings</h3>
         <form id='settingsForm'>
-          <div  style="border: 1px solid #000;">
+          <div  style="border: 1px solid #000; padding: 10px;">
              <p>Delimiter:
 
                <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterAuto'   value="auto" checked/> Auto</label>
@@ -37,7 +37,7 @@ title: CSV Converter
             </div>
           </div>
           <br />
-          <div  style="border: 1px solid #000;">
+          <div  style="border: 1px solid #000; padding: 10px;">
             <p><label>Upload CSV:</label></p>
             <div class="settingsGroup">
               <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
@@ -45,7 +45,7 @@ title: CSV Converter
               <p><input type="file" onchange="readfile(this.files[0])"></input></p>
             </div>
           </div>
-          <div  style="border: 1px solid #000;">
+          <div  style="border: 1px solid #000; padding: 10px;">
             <br />
             <div id="login" style="display: none;">
               <p><a href="http://kinlane.github.io/csv-converter/oauth.html">Login</a></p>
