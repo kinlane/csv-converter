@@ -124,7 +124,7 @@ DataConverter.prototype.create = function(w,h) {
 
 DataConverter.prototype.resize = function(w,h) {
 
-  var paneWidth = 750;
+  var paneWidth = 800;
   var paneHeight = (h-90)/2-20;
 
   this.node.css({width:paneWidth});
