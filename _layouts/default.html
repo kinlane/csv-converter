@@ -6,6 +6,18 @@
   <body onload="authenticated();">
 
     <header class="masthead">
+
+      <script type="text/javascript">
+      	// Do we have a token?
+    	  var $oAuth_Token = getUrlVar('oAuth_Token');
+
+		    var $org = '{{ site.org }}';
+		    var $repo = '{{ site.repo }}';
+		    var $oauthio = '{{ site.oauthio }}';
+
+      </script>
+
+    <header class="masthead">
       <div class="masthead-inner" align="center">
 		<h2><a href="http://kinlane.github.io/csv-converter/">{"CSV Converter"}</a></h2>
     	<a href="http://bit.ly/1cHBhd5" target="_blank">
@@ -14,13 +26,13 @@
         <div class="colophon">
           <ul class="colophon-links">
             <li>
-              <a href="/csv-converter/index.html">Home</a>
+              <a href="/csv-converter/index.html" id="home-nav">Home</a>
             </li>
             <li>
-              <a href="/csv-converter/blog/">Blog</a> <span style="font-size: 12px;">(<a href="/blog.xml">RSS</a>)</span>
+              <a href="/csv-converter/blog/" id="blog-nav">Blog</a> <span style="font-size: 12px;">(<a href="/blog.xml">RSS</a>)</span>
             </li>
             <li>
-              <a href="/csv-converter/converter.html">Converter</a></span>
+              <a href="/csv-converter/converter.html" id="converter-nav">Converter</a></span>
             </li>
             <li style="padding-top: 10px;">
               <a href="http://apievangelist.com"><< Return to API Evangelist</a>
@@ -36,16 +48,23 @@
         </script>
 
         <script type="text/javascript">
-        function listSponsors()
-            {
-            $.getJSON('https://s3.amazonaws.com/kinlane-productions/json/sponsors.json', function(data) {
-                $.each(data['sponsors'], function(key, val) {
-                var template = $('#parterListingTemplate').html();
-                var html = Mustache.to_html(template, val);
-                $('#partnerListingContainer').append(html);
-                });
-            });
-        }
+          function listSponsors()
+              {
+              $.getJSON('https://s3.amazonaws.com/kinlane-productions/json/sponsors.json', function(data) {
+                  $.each(data['sponsors'], function(key, val) {
+                  var template = $('#parterListingTemplate').html();
+                  var html = Mustache.to_html(template, val);
+                  $('#partnerListingContainer').append(html);
+                  });
+              });
+          }
+
+          if($oAuth_Token!='')
+          	{
+          	document.getElementById("home-nav").href = document.getElementById("home-nav").href + '?oAuth_Token=' + $oAuth_Token;
+            document.getElementById("blog-nav").href = document.getElementById("blog-nav").href + '?oAuth_Token=' + $oAuth_Token;
+            document.getElementById("converter-nav").href = document.getElementById("converter-nav").href + '?oAuth_Token=' + $oAuth_Token;
+          	}
         </script>
 
         <div id="partnerListingContainer" align="center" style="background-color:#FFF; margin-top: 45px; padding-top: 10px; width: 60%; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 3px solid #FFFFFF; margin-bottom: 7px;">

@@ -20,3 +20,8 @@ BASE_PATH : http://kinlane.github.io/csv-converter/
 
 categories_path : /categories.html
 tags_path : /tags.html
+
+org: kinlane
+repo: csv-converter
+resource: csv-converter
+oauthio: qUDL4eZqKPFb41SwuWIYIwLR6jI
