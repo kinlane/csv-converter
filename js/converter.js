@@ -127,9 +127,9 @@ DataConverter.prototype.resize = function(w,h) {
   var paneWidth = w;
   var paneHeight = (h-90)/2-20;
 
-  //this.node.css({width:paneWidth});
-  //this.inputTextArea.css({width:paneWidth-20,height:paneHeight});
-  //this.outputTextArea.css({width: paneWidth-20, height:paneHeight});
+  this.node.css({width:paneWidth});
+  this.inputTextArea.css({width:500px,height:300px});
+  this.outputTextArea.css({width:500px, height:500px});
 
 }
 
