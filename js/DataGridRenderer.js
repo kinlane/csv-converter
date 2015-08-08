@@ -144,7 +144,7 @@ var DataGridRenderer = {
           var rowOutput = '"' + ( row[j] || "" ) + '"';
         };
 
-      outputText += ('"'+headerNames[j] +'"' + ":" + rowOutput + "~");
+      outputText += ('"'+headerNames[j] +'"' + ":" + '"' + rowOutput + '"');
 
         if (j < (numColumns-1)) {outputText+=","};
       };
