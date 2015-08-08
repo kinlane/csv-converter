@@ -10,8 +10,8 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/css/hyde.css">
-  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="//csv-converter/css/hyde.css">
+  <link rel="stylesheet" href="//csv-converter/css/syntax.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
 
   	<!-- Icons -->
@@ -22,21 +22,82 @@
   <script src="https://s3.amazonaws.com/kinlane-productions/js/mustache.js" type="text/javascript"></script>
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/csv-converter/blog.xml">
 
-  <link rel="stylesheet" href="css/converter.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/csv-converter/css/converter.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
-  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/CSVParser.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/DataGridRenderer.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/converter.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/Controller.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/upload.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/CSVParser.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/DataGridRenderer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/converter.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/Controller.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/upload.js" type="text/javascript" charset="utf-8"></script>
 
-  <script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/oauth.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/github.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/utilities.js" type="text/javascript" charset="utf-8"></script>   
+  <script src="/csv-converter/js/base64.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/oauth.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/github.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/csv-converter/js/utilities.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript" charset="utf-8">
+
+    function authenticated()
+        {
+        $oAuth_Token = getUrlVar('oAuth_Token');
+        if($oAuth_Token!='')
+            {
+            document.getElementById('oAuth_Token').value = $oAuth_Token;
+            document.getElementById("login").style.display = 'none';
+            }
+        else
+            {
+            document.getElementById("save").style.display = 'none';
+            document.getElementById("login").style.display = '';
+            }
+        }
+
+    function saveConversion()
+        {
+
+        var github = new Github({
+            token: $oAuth_Token,
+            auth: "oauth"
+                });
+
+        $UploadCSVName = "";
+        $UploadJSONName = "";
+        $UploadXMLName = "";
+
+        $UploadFileName = document.getElementById("uploadfilename").value;
+        $UploadCSVName = $UploadFileName;
+        $DataSelector = document.getElementById("dataSelector").value;
+
+        //alert($DataSelector);
+        if($DataSelector=="xml") {
+          $UploadXMLName = $UploadFileName.replace(".csv",".xml");
+        }
+
+        if($DataSelector=="json") {
+          $UploadJSONName = $UploadFileName.replace(".csv",".json");
+        }
+
+        $CSVOutput = document.getElementById("dataInput").value;
+        $DataOutput = document.getElementById("dataOutput").value;
+
+        var repo = github.getRepo('kinlane', 'csv-converter');
+        repo.write('master',$UploadCSVName, $CSVOutput, 'Saving CSV Input for ' + $UploadCSVName, function(err) {
+
+        });
+
+        if($UploadJSONName!=''){
+            alert($UploadJSONName + ' has been saved to master branch in this Github repo');
+            repo.write('master',$UploadJSONName, $DataOutput, 'Saving JSON Input for ' + $UploadJSONName, function(err) {});
+            }
+        if($UploadXMLName!=''){
+            alert($UploadXMLName + ' has been saved to master branch in this Github repo');
+            repo.write('master',$UploadXMLName, $DataOutput, 'Saving XML Input for ' + $UploadXMLName, function(err) {});}
+        }
+
+    </script>
 
 </head>

@@ -15,7 +15,7 @@
   <script src="js/converter.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/Controller.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/upload.js" type="text/javascript" charset="utf-8"></script>
-  
+
   <script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/oauth.js" type="text/javascript" charset="utf-8"></script>
@@ -24,21 +24,21 @@
 
 </head>
 <body>
-    
+
 <h1>Authentication</h1>
 
-<script type="text/javascript"> 
+<script type="text/javascript">
 
     OAuth.initialize('I_TRiPFUBHSp-3DxS5RjS9ub8sg');
     OAuth.callback('github', function(err, result) {
-        
+
         $oAuth_Token = result.access_token;
-        
+
         redirectURL = "http://kinlane.github.io/csv-converter/index.html?oAuth_Token=" + $oAuth_Token;
-        
+
         location.href = redirectURL;
 
         });
-</script>             
+</script>
 </body>
 </html>
