@@ -172,6 +172,7 @@
 	</div>
 	</noscript>
 
+  {% if page.title == 'CSV Converter' %}
   <script type="text/javascript" charset="utf-8">
 
     function authenticated()
@@ -231,7 +232,8 @@
             repo.write('master',$UploadXMLName, $DataOutput, 'Saving XML Input for ' + $UploadXMLName, function(err) {});}
         }
 
-    </script>  
-
+    </script>
+  {% endif %}
+  
   </body>
 </html>
