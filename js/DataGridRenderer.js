@@ -145,6 +145,7 @@ var DataGridRenderer = {
         };
 
       rowOutput = rowOutput.replace('"', '');
+      rowOutput = rowOutput.replace('"', '');
       outputText += ('"'+headerNames[j] +'"' + ":" + '"' + rowOutput + '"');
 
         if (j < (numColumns-1)) {outputText+=","};
