@@ -70,7 +70,7 @@ DataConverter.prototype.create = function(w,h) {
 
   //build HTML for converter
   this.inputHeader = $('<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Input CSV or tab-delimited data. <span class="subhead"> Using Excel? Simply copy and paste. No data on hand? <a href="#" id="insertSample">Use sample</a></span></p></div>');
-  this.inputTextArea = $('<textarea class="textInputs" id="dataInput"></textarea>');
+  this.inputTextArea = $('<textarea class="textInputs" id="dataInput" style="width: 750px; border: 1px solid #000;"></textarea>');
   var outputHeaderText = '<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Output as <select name="Data Types" id="dataSelector" >';
     for (var i=0; i < this.outputDataTypes.length; i++) {
 
@@ -81,7 +81,7 @@ DataConverter.prototype.create = function(w,h) {
     };
     outputHeaderText += '</select><span class="subhead" id="outputNotes"></span></p></div>';
   this.outputHeader = $(outputHeaderText);
-  this.outputTextArea = $('<textarea class="textInputs" id="dataOutput"></textarea>');
+  this.outputTextArea = $('<textarea class="textInputs" id="dataOutput" style="width: 750px; border: 1px solid #000;"></textarea>');
 
   this.node.append(this.inputHeader);
   this.node.append(this.inputTextArea);

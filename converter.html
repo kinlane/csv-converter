@@ -12,48 +12,52 @@ title: CSV Converter
       <div id='settings'>
         <h3>Settings</h3>
         <form id='settingsForm'>
-           <p>Delimiter:
+          <div  style="border: 1px solid #000;">
+             <p>Delimiter:
 
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterAuto'   value="auto" checked/> Auto</label>
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterComma'  value="comma" /> Comma</label>
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterTab'    value="tab" /> Tab</label>
-            </p>
-          <p>Decimal Sign:
+               <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterAuto'   value="auto" checked/> Auto</label>
+               <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterComma'  value="comma" /> Comma</label>
+               <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterTab'    value="tab" /> Tab</label>
+              </p>
+            <p>Decimal Sign:
 
-             <label><input class="settingsElement" type="radio" name="decimal" id='decimalDot'   value="dot" checked/> Dot</label>
-             <label><input class="settingsElement" type="radio" name="decimal" id='decimalComma'  value="comma" /> Comma</label>
-            </p>
-          <p><label><input class="settingsElement" type="checkbox" name="" value="" id="headersProvidedCB" checked /> First row is the header</label></p>
-          <div class="settingsGroup">
-            <p>Transform: <label><input class="settingsElement" type="radio" name="headerModifications" value="downcase" id='headersDowncase' /> downcase</label>
-            <label><input class="settingsElement" type="radio" name="headerModifications" id='headersUpcase' value="upcase" /> upcase</label>
-            <label><input class="settingsElement" type="radio" name="headerModifications" id='headersNoTransform' value="none" checked /> none</label></p>
-          </div>
+               <label><input class="settingsElement" type="radio" name="decimal" id='decimalDot'   value="dot" checked/> Dot</label>
+               <label><input class="settingsElement" type="radio" name="decimal" id='decimalComma'  value="comma" /> Comma</label>
+              </p>
+            <p><label><input class="settingsElement" type="checkbox" name="" value="" id="headersProvidedCB" checked /> First row is the header</label></p>
+            <div class="settingsGroup">
+              <p>Transform: <label><input class="settingsElement" type="radio" name="headerModifications" value="downcase" id='headersDowncase' /> downcase</label>
+              <label><input class="settingsElement" type="radio" name="headerModifications" id='headersUpcase' value="upcase" /> upcase</label>
+              <label><input class="settingsElement" type="radio" name="headerModifications" id='headersNoTransform' value="none" checked /> none</label></p>
+            </div>
 
-          <p><label><input class="settingsElement" type="checkbox" name="some_name" value="" id="includeWhiteSpaceCB" checked /> Include white space in output</label></p>
-          <div class="settingsGroup">
-            <p>Indent with: <label><input class="settingsElement" type="radio" name="indentType" value="tabs" id='includeWhiteSpaceTabs'/> tabs</label> <label><input class="settingsElement" type="radio" name="indentType" value="spaces" id='includeWhiteSpaceSpaces' checked/> spaces</label></p>
+            <p><label><input class="settingsElement" type="checkbox" name="some_name" value="" id="includeWhiteSpaceCB" checked /> Include white space in output</label></p>
+            <div class="settingsGroup">
+              <p>Indent with: <label><input class="settingsElement" type="radio" name="indentType" value="tabs" id='includeWhiteSpaceTabs'/> tabs</label> <label><input class="settingsElement" type="radio" name="indentType" value="spaces" id='includeWhiteSpaceSpaces' checked/> spaces</label></p>
+            </div>
           </div>
           <br />
-          <p><label>Upload CSV:</label></p>
-          <div class="settingsGroup">
-            <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
-            <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
-            <p><input type="file" onchange="readfile(this.files[0])"></input></p>
+          <div  style="border: 1px solid #000;">
+            <p><label>Upload CSV:</label></p>
+            <div class="settingsGroup">
+              <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
+              <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
+              <p><input type="file" onchange="readfile(this.files[0])"></input></p>
+            </div>
           </div>
-          <br />
-          <div id="login" style="display: none;">
-            <p align="center"><a href="http://kinlane.github.io/csv-converter/oauth.html">Login</a></p>
-          </div>
-          <div id="save" style="display: none;">
-            <p align="center"><a href="#" onclick="saveConversion();">Save</a></p>
+          <div  style="border: 1px solid #000;">
+            <br />
+            <div id="login" style="display: none;">
+              <p align="center"><a href="http://kinlane.github.io/csv-converter/oauth.html">Login</a></p>
+            </div>
+            <div id="save" style="display: none;">
+              <p align="center"><a href="#" onclick="saveConversion();">Save</a></p>
+            </div>
           </div>
         </form>
 
       </div>
     </div>
-
-
 
     <div id='converter' class=''>
 
