@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body onload="authenticated();">
+  <body{% if page.title == 'CSV Converter' %} onload="authenticated();"{% endif %}>
 
     <header class="masthead">
 
@@ -234,6 +234,6 @@
 
     </script>
   {% endif %}
-  
+
   </body>
 </html>
