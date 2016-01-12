@@ -7,6 +7,13 @@ title: JSON to CSV Converter
   function JSONToCSVConvertor()
     {
 
+      var paneWidth = 800;
+      var paneHeight = (h-90)/2-20;
+
+      document.getElementById('converter').node.css({width:paneWidth});
+      document.getElementById('converter').inputTextArea.css({width:paneWidth-20,height:paneHeight});
+      document.getElementById('converter').outputTextArea.css({width: paneWidth-20, height:paneHeight});
+
       $jsonData = document.getElementById("dataInput");
       var arrData = typeof $jsonData != 'object' ? JSON.parse($jsonData) : $jsonData;
       var CSV = '';
@@ -62,7 +69,7 @@ title: JSON to CSV Converter
 
   </form>
 
-  <div id='converter' class=''>
+  <div id="converter" class="">
     <textarea class="textInputs" id="dataInput"></textarea>
     <textarea class="textInputs" id="dataOutput"></textarea>
   </div>
