@@ -69,7 +69,7 @@ DataConverter.prototype.create = function(w,h) {
   //build HTML for converter
   this.inputHeader = $('<div class="groupHeader" id="inputHeader"><p class="groupHeadline">CSV Data:</p></div>');
   this.inputTextArea = $('<textarea class="textInputs" id="dataInput" style="width: 100%; height: 200px;"></textarea>');
-  var outputHeaderText = '<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Output as <select name="Data Types" id="dataSelector" >';
+  var outputHeaderText = '<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Output as JSON:<select name="Data Types" id="dataSelector" style="display: none;">';
     for (var i=0; i < this.outputDataTypes.length; i++) {
 
       outputHeaderText += '<option value="'+this.outputDataTypes[i]["id"]+'" '
