@@ -186,6 +186,7 @@ a:focus {
   border: 1px solid #FFF;
 }
 .masthead-inner {
+  vertical-align: text-top;
 }
 
 .masthead h2 {
@@ -234,6 +235,7 @@ a:focus {
     bottom: 0;
     right: 0;
     left: 0;
+    vertical-align: text-top;
   }
   .masthead h1 {
     font-size: 64px;
@@ -486,7 +488,7 @@ a:focus {
 }
 
 .sharebuttons{
-	text-align: center;	
+	text-align: center;
 }
 .sharebuttons li{
 	text-align: center;
@@ -497,8 +499,8 @@ a:focus {
 
 
 .toolbar{
-    float:right; 
-    padding-top: 10px;  
+    float:right;
+    padding-top: 10px;
 }
 .toolbar li{
     display: inline;
@@ -511,4 +513,4 @@ a:focus {
 .toolbar li a{
     color:#000;
     font-size: 14px;
-} 
+}
