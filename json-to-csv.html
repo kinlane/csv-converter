@@ -10,7 +10,7 @@ title: JSON to CSV Converter
       console.log("converting JSON...");
       $jsonData = document.getElementById("dataInput");
       var arrData = typeof $jsonData != 'object' ? JSON.parse($jsonData) : $jsonData;
-      var CSV = '';
+      var $csv = '';
       var ShowLabel = 1;
 
       //Label / Header
@@ -22,7 +22,7 @@ title: JSON to CSV Converter
               row += '"' + index+ '",';
             }
           row = row.slice(0, -1);
-          CSV += row + '\r\n';
+          $csv += row + '\r\n';
         }
 
       for (var i = 0; i < arrData.length; i++) {
@@ -32,17 +32,18 @@ title: JSON to CSV Converter
               row += '"' + arrData[i][index] + '",';
             }
           row.slice(0, row.length - 1);
-          CSV += row + '\r\n';
+          $csv += row + '\r\n';
       }
 
-      if (CSV == '') {
+      if ($csv == '') {
           alert("Sorry, the data is invalid!");
           return;
       }
 
-       var out = document.getElementById("dataOutput");
-       out.innerHTML = "";
-       out.appendChild(document.createTextNode(CSV));
+      console.log($csv);
+      var out = document.getElementById("dataOutput");
+      out.innerHTML = "";
+      out.appendChild(document.createTextNode($csv));
 
   }
 
