@@ -6,17 +6,18 @@ title: CSV to JSON
 <script src="/csv-converter/js/converter.js" type="text/javascript" charset="utf-8"></script>
 <script src="/csv-converter/js/Controller.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-function showSettings()
-  {
-  if(document.getElementById("adjust-settings").style.display == 'none')
+
+  function showSettings()
     {
-    document.getElementById("adjust-settings").style.display = '';
+    if(document.getElementById("adjust-settings").style.display == 'none')
+      {
+      document.getElementById("adjust-settings").style.display = '';
+      }
+    else
+      {
+      document.getElementById("adjust-settings").style.display = 'none';
+      }
     }
-  else
-    {
-    document.getElementById("adjust-settings").style.display = 'none';
-    }
-  }
 
   function uploadCSV(f) {
 
