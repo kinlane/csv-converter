@@ -4,7 +4,7 @@ title: JSON to CSV Converter
 ---
 <script type="text/javascript">
 
-  function JSONToCSVConvertor()
+  function jsonOutput()
     {
       $jsonData = document.getElementById("dataInput");
       var arrData = typeof $jsonData != 'object' ? JSON.parse($jsonData) : $jsonData;
@@ -16,7 +16,7 @@ title: JSON to CSV Converter
           var row = "";
           for (var index in arrData[0])
             {
-              row += index + ',';
+              row += '"' + index+ '",';
             }
           row = row.slice(0, -1);
           CSV += row + '\r\n';
@@ -49,7 +49,7 @@ title: JSON to CSV Converter
     <div style="border: 1px solid #FFF; padding: 0px; margin-bottom: 10px;">
       <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
       <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
-      <input type="file" onchange="readfile(this.files[0])"></input>
+      <input type="file" onchange="readfile(this.files[0]); jsonOutput();"></input>
     </div>
 
     <div id="login" style="display: none;">
@@ -62,8 +62,8 @@ title: JSON to CSV Converter
   </form>
 
   <div id="converter" class="" style="width: 100%;">
-    <textarea class="textInputs" id="dataInput" style="width: 100%;"></textarea>
-    <textarea class="textInputs" id="dataOutput" style="width: 100%;"></textarea>
+    <textarea class="textInputs" id="dataInput" style="width: 100%; height: 300px;"></textarea>
+    <textarea class="textInputs" id="dataOutput" style="width: 100%; height: 300px;"></textarea>
   </div>
 
 </div>
