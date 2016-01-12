@@ -25,3 +25,14 @@ org: kinlane
 repo: csv-converter
 resource: csv-converter
 oauthio: qUDL4eZqKPFb41SwuWIYIwLR6jI
+
+# Masthead title
+masthead_link: http://kinlane.github.io/csv-converter/
+masthead_font_size: 75
+masthead_title: '{"CSV Converter"}'
+
+# Feature
+feature_title: API Design Providers Guide
+feature_link: http://apis.how/xzca4kr2wb
+feature_image_source: https://s3.amazonaws.com/kinlane-productions/whitepapers/3scale/report-image-api-design.png
+feature_image_width: 45

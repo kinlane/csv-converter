@@ -13,11 +13,13 @@
     <header class="masthead">
       <div class="masthead-inner" align="center">
 
-      <h2><a href="http://kinlane.github.io/csv-converter/">{"CSV Converter"}</a></h2>
+        <!-- Masthead Title -->
+        <h2><a href="{{ site.masthead_link }}" style="font-size: {{ site.masthead_font_size }}%;">{{ site.masthead_title }}</a></h2>
 
-      <a href="http://bit.ly/1cHBhd5" target="_blank">
-    		<img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/3scale/Winning-in-the-API-Economy-eBook-3scale.png" width="45%" style="border: 1px solid #FFF; margin-bottom: 25px;" />
-    	</a>
+        <!-- Feature -->
+        <a href="{{ site.feature_link }}" target="_blank">
+          <img src="{{ site.feature_image_source }}" width="{{ site.feature_image_width }}%" style="border: 1px solid #FFF;" title="{{ site.feature_title }}" />
+        </a>
 
         <div class="colophon">
           <ul class="colophon-links">
