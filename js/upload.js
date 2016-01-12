@@ -17,6 +17,7 @@ function uploadCSV(f) {
     	document.getElementById("save").style.display = '';
     	}
 
+    // update JSON
     document.getElementById("dataSelector").value = 'json';
 
     }
