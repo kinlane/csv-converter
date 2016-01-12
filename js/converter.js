@@ -5,8 +5,6 @@
 //  Created by Shan Carter on 2010-09-01.
 //
 
-
-
 function DataConverter(nodeId) {
 
   //---------------------------------------
@@ -138,7 +136,6 @@ DataConverter.prototype.convert = function() {
   this.inputText = this.inputTextArea.val();
   this.outputText = "";
 
-
   //make sure there is input data before converting...
   if (this.inputText.length > 0) {
 
@@ -161,12 +158,10 @@ DataConverter.prototype.convert = function() {
 
     this.outputText = DataGridRenderer[this.outputDataType](dataGrid, headerNames, headerTypes, this.indent, this.newLine);
 
-
     this.outputTextArea.val(errors + this.outputText);
 
   }; //end test for existence of input text
 }
-
 
 DataConverter.prototype.insertSampleData = function() {
   this.inputTextArea.val("NAME\tVALUE\tCOLOR\tDATE\nBob\t12\tblue\tSep. 25, 2013\nMary\t13\t\"green\tblue\"\tSep. 27, 2013\nJohn\t45\torange\tSep. 29, 2013\nMinna\t27\tteal\tSep. 30, 2013");

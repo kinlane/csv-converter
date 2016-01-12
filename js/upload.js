@@ -1,7 +1,9 @@
 function uploadCSV(f) {
+
     var reader = new FileReader();
     reader.readAsText(f);
     reader.onload = function() {
+
         var text = reader.result;
         document.getElementById('uploadfilename').value = f.name;
         var out = document.getElementById("dataInput");
@@ -15,6 +17,9 @@ function uploadCSV(f) {
         	document.getElementById("save").style.display = '';
         	}
 
+      console.log("going to run!");
+      DataConverter.convert();
+
     }
     reader.onerror = function(e) {
         console.log("Error", e);
@@ -22,8 +27,6 @@ function uploadCSV(f) {
 }
 
 function uploadJSON(f) {
-
-    console.log("Upload SON!");
 
     var reader = new FileReader();
     reader.readAsText(f);
@@ -36,7 +39,6 @@ function uploadJSON(f) {
         out.innerHTML = "";
         out.appendChild(document.createTextNode(text));
 
-        console.log("writte!");
         jsonOutput();
 
         oAuth_Token = document.getElementById('oAuth_Token').value;
