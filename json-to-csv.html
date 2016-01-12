@@ -6,17 +6,6 @@ title: JSON to CSV Converter
 
   function JSONToCSVConvertor()
     {
-
-      var paneWidth = 800;
-      var paneHeight = (h-90)/2-20;
-
-      document.getElementById('converter').style.width = paneWidth;
-      document.getElementById('converter').style.height = paneHeight;
-      document.getElementById('dataInput').style.width = paneWidth-20;
-      document.getElementById('dataInput').style.height = paneHeight;
-      document.getElementById('dataOutput').style.width = paneWidth-20;
-      document.getElementById('dataOutput').style.height = paneHeight;
-
       $jsonData = document.getElementById("dataInput");
       var arrData = typeof $jsonData != 'object' ? JSON.parse($jsonData) : $jsonData;
       var CSV = '';
@@ -76,5 +65,19 @@ title: JSON to CSV Converter
     <textarea class="textInputs" id="dataInput"></textarea>
     <textarea class="textInputs" id="dataOutput"></textarea>
   </div>
+
+  <script type="text/javascript">
+
+      var paneWidth = 800;
+      var paneHeight = (h-90)/2-20;
+
+      document.getElementById('converter').style.width = paneWidth;
+      document.getElementById('converter').style.height = paneHeight;
+      document.getElementById('dataInput').style.width = paneWidth-20;
+      document.getElementById('dataInput').style.height = paneHeight;
+      document.getElementById('dataOutput').style.width = paneWidth-20;
+      document.getElementById('dataOutput').style.height = paneHeight;
+      
+  </script>
 
 </div>
