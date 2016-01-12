@@ -4,21 +4,20 @@ function uploadCSV(f) {
     reader.readAsText(f);
     reader.onload = function() {
 
-        var text = reader.result;
-        document.getElementById('uploadfilename').value = f.name;
-        var out = document.getElementById("dataInput");
-        out.innerHTML = "";
-        out.appendChild(document.createTextNode(text));
+    var text = reader.result;
+    document.getElementById('uploadfilename').value = f.name;
+    var out = document.getElementById("dataInput");
+    out.innerHTML = "";
+    out.appendChild(document.createTextNode(text));
 
-        oAuth_Token = document.getElementById('oAuth_Token').value;
-        //alert(oAuth_Token);
-        if(oAuth_Token!='')
-        	{
-        	document.getElementById("save").style.display = '';
-        	}
+    oAuth_Token = document.getElementById('oAuth_Token').value;
+    //alert(oAuth_Token);
+    if(oAuth_Token!='')
+    	{
+    	document.getElementById("save").style.display = '';
+    	}
 
-      console.log("going to run!");
-      d.convert();
+    document.getElementById("dataSelector").value = 'json';
 
     }
     reader.onerror = function(e) {
