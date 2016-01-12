@@ -18,7 +18,7 @@ function uploadCSV(f) {
         	}
 
       console.log("going to run!");
-      DataConverter.convert();
+      d.convert();
 
     }
     reader.onerror = function(e) {
