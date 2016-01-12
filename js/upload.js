@@ -25,11 +25,17 @@ function uploadJSON(f) {
     var reader = new FileReader();
     reader.readAsText(f);
     reader.onload = function() {
+
         var text = reader.result;
+
         document.getElementById('uploadfilename').value = f.name;
         var out = document.getElementById("dataInput");
+
         out.innerHTML = "";
         out.appendChild(document.createTextNode(text));
+
+        console.log("writte!");
+        jsonOutput();
 
         oAuth_Token = document.getElementById('oAuth_Token').value;
         //alert(oAuth_Token);
@@ -37,7 +43,7 @@ function uploadJSON(f) {
         	{
         	document.getElementById("save").style.display = '';
         	}
-        jsonOutput();
+
     }
     reader.onerror = function(e) {
         console.log("Error", e);
