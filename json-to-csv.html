@@ -7,7 +7,6 @@ title: JSON to CSV Converter
   function jsonOutput()
     {
 
-      console.log("converting JSON...");
       $jsonData = document.getElementById("dataInput").value;
       var arrData = typeof $jsonData != 'object' ? JSON.parse($jsonData) : $jsonData;
       var $csv = '';
@@ -40,7 +39,6 @@ title: JSON to CSV Converter
           return;
       }
 
-      console.log($csv);
       var out = document.getElementById("dataOutput");
       out.innerHTML = "";
       out.appendChild(document.createTextNode($csv));
@@ -51,7 +49,7 @@ title: JSON to CSV Converter
 <div id='settings'>
   <form id='settingsForm' style="padding: 0px; margin: 0px;">
 
-    <h3>Upload a JSON file (<a href="#" onclick="showSettings();">advanced settings</a>):</h3>
+    <h3>Upload a JSON file:</h3>
     <div style="border: 1px solid #FFF; padding: 0px; margin-bottom: 10px;">
       <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
       <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
