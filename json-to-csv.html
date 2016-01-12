@@ -2,4 +2,72 @@
 layout: page
 title: JSON to CSV Converter
 ---
-<p>This tool will convert your JSON back to CSV.</p>
+<script type="text/javascript">
+
+  function JSONToCSVConvertor()
+    {
+
+      $jsonData = document.getElementById("dataInput");
+      var arrData = typeof $jsonData != 'object' ? JSON.parse($jsonData) : $jsonData;
+      var CSV = '';
+
+      //Label / Header
+      if (ShowLabel)
+        {
+          var row = "";
+          for (var index in arrData[0])
+            {
+              row += index + ',';
+            }
+          row = row.slice(0, -1);
+          CSV += row + '\r\n';
+        }
+
+      for (var i = 0; i < arrData.length; i++) {
+          var row = "";
+          for (var index in arrData[i])
+            {
+              row += '"' + arrData[i][index] + '",';
+            }
+          row.slice(0, row.length - 1);
+          CSV += row + '\r\n';
+      }
+
+      if (CSV == '') {
+          alert("Sorry, the data is invalid!");
+          return;
+      }
+
+      // What do we do with it?
+       $('#csv').val(CSV);
+  }
+
+</script>
+<div id='settings'>
+  <form id='settingsForm' style="padding: 0px; margin: 0px;">
+
+    <h3>Upload a JSON file (<a href="#" onclick="showSettings();">advanced settings</a>):</h3>
+    <div style="border: 1px solid #FFF; padding: 0px; margin-bottom: 10px;">
+      <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
+      <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
+      <input type="file" onchange="readfile(this.files[0])"></input>
+    </div>
+
+    <div id="login" style="display: none;">
+      <p align="center"><a href="http://kinlane.github.io/csv-converter/oauth.html">Login</a> (you will need to be added to Gitub repo)</p>
+    </div>
+    <div id="save" style="display: none;">
+      <p align="center"><a href="#" onclick="saveConversion();">Save</a></p>
+    </div>
+
+  </form>
+
+  <div id='converter' class=''>
+    <textarea class="textInputs" id="dataInput"></textarea>
+    <textarea class="textInputs" id="dataOutput"></textarea>
+  </div>
+
+</div>
+
+<p><br /></p>
+<p align="center"><a href="https://shancarter.github.io/mr-data-converter/"><strong>Thank You Mr. Data Converter!</strong></a></p>
