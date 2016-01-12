@@ -38,12 +38,8 @@ title: CSV to JSON
       	document.getElementById("save").style.display = '';
       	}
 
-      // update JSON
-      console.log("dataselector: json");
-      //document.getElementById("dataSelector").value = 'json';
-      $('dataSelector').val('json');
-
-      console.log('done');
+      $('#dataSelector').val('json');
+      $("#dataSelector").change();
       }
       reader.onerror = function(e) {
           console.log("Error", e);
