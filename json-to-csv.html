@@ -8,7 +8,7 @@ title: JSON to CSV Converter
     {
 
       console.log("converting JSON...");
-      $jsonData = document.getElementById("dataInput");
+      $jsonData = document.getElementById("dataInput").value;
       var arrData = typeof $jsonData != 'object' ? JSON.parse($jsonData) : $jsonData;
       var $csv = '';
       var ShowLabel = 1;
