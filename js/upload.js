@@ -21,7 +21,8 @@ function uploadCSV(f) {
     console.log("dataselector: json");
     //document.getElementById("dataSelector").value = 'json';
     $('dataSelector').val('json');
-
+    $fun = DataConverter.convert();
+    console.log($fun);
     }
     reader.onerror = function(e) {
         console.log("Error", e);
