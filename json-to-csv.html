@@ -40,8 +40,10 @@ title: JSON to CSV Converter
           return;
       }
 
-      // What do we do with it?
-       $('#dataOutput').val(CSV);
+       var out = document.getElementById("dataOutput");
+       out.innerHTML = "";
+       out.appendChild(document.createTextNode(CSV));
+
   }
 
 </script>

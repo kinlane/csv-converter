@@ -33,7 +33,6 @@ function uploadJSON(f) {
 
         document.getElementById('uploadfilename').value = f.name;
         var out = document.getElementById("dataInput");
-
         out.innerHTML = "";
         out.appendChild(document.createTextNode(text));
 
