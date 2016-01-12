@@ -69,7 +69,7 @@ DataConverter.prototype.create = function(w,h) {
   var self = this;
 
   //build HTML for converter
-  this.inputHeader = $('<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Input CSV or tab-delimited data.</p></div>');
+  this.inputHeader = $('<div class="groupHeader" id="inputHeader"><p class="groupHeadline">CSV Data:</p></div>');
   this.inputTextArea = $('<textarea class="textInputs" id="dataInput"></textarea>');
   var outputHeaderText = '<div class="groupHeader" id="inputHeader"><p class="groupHeadline">Output as <select name="Data Types" id="dataSelector" >';
     for (var i=0; i < this.outputDataTypes.length; i++) {
