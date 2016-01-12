@@ -15,12 +15,11 @@ function showSettings()
     }
   }
 </script>
-<p>This tool will convert your comma separate values (CSV) file into JSON, XML, and other formats. (<a href="#" onclick="showSettings();">advanced settings</a>)</p>
 <div id='settings'>
   <form id='settingsForm' style="padding: 0px; margin: 0px;">
 
-    <h3>Upload a Comma Separated Value (CSV) file:</h3>
-    <div style="border: 1px solid #FFF; padding: 5px; margin-bottom: 10px;">
+    <h3>Upload a Comma Separated Value (CSV) file (<a href="#" onclick="showSettings();">advanced settings</a>):</h3>
+    <div style="border: 1px solid #FFF; padding: 0px; margin-bottom: 10px;">
       <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
       <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
       <input type="file" onchange="readfile(this.files[0])"></input>
