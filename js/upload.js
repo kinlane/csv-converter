@@ -22,6 +22,9 @@ function uploadCSV(f) {
 }
 
 function uploadJSON(f) {
+
+    console.log("Upload SON!");
+
     var reader = new FileReader();
     reader.readAsText(f);
     reader.onload = function() {
