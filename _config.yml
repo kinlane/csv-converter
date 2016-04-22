@@ -45,7 +45,7 @@ project_footer: This application runs as a micro tool, which operates 100% clien
 # Navigation
 navigation:
   - label1: Home
-    link1: /
+    link1: /csv-converter/
     size1: 70
     extend: 0
     label2:
@@ -54,11 +54,11 @@ navigation:
     padding: 0
     decorate: 0
   - label1: Blog
-    link1: /blog/
+    link1: /csv-converter/blog/
     size1: 70
     extend: 1
     label2: RSS
-    link2: /blog.xml
+    link2: /csv-converter/blog.xml
     size2: 60
     padding: 2
     decorate: 0
