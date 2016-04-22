@@ -63,7 +63,7 @@ navigation:
     padding: 2
     decorate: 0
   - label1: CSV to JSON
-    link1: /csv-converter/csv-to-json.html
+    link1: /csv-converter/csv-to-json/
     size1: 70
     extend: 0
     label2:
@@ -72,7 +72,7 @@ navigation:
     padding: 0
     decorate: 0
   - label1: JSON to CSV
-    link1: /csv-converter/json-to-csv.html
+    link1: /csv-converter/json-to-csv/
     size1: 70
     extend: 0
     label2:
