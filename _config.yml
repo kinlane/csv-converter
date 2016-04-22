@@ -1,4 +1,4 @@
-title:        Minimum Viable API Operations Definition
+title:        CSV Converter
 url:          http://kinlane.github.io/csv-converter/
 logo:         http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png
 logo_width:   80
@@ -22,7 +22,7 @@ tags_path : /tags.html
 # Masthead title
 masthead_link: http://kinlane.github.io/csv-converter/
 masthead_font_size: 65
-masthead_title: '{"Minimum Viable API"}'
+masthead_title: '{"CSV Converter"}'
 
 # Feature
 feature_title: API Guide
