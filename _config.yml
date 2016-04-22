@@ -14,7 +14,7 @@ permalink: /:categories/:year/:month/:day/:title/
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 paginate: 150
-paginate_path: "/news/page:num"
+paginate_path: "/blog/page:num"
 
 categories_path : /categories.html
 tags_path : /tags.html
