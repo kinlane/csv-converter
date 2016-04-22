@@ -4,36 +4,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://gmpg.org/xfn/11" rel="profile">
 
-  <title>
-    {% if page.title %}{{ page.title }} &middot; {% endif %}
-    {{ site.tagline }}
-  </title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {% endif %}</title>
+
+  <!--Bootstrap-->
+  <link href="https://s3.amazonaws.com/kinlane-productions/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/csv-converter/css/hyde.css">
-  <link rel="stylesheet" href="/csv-converter/css/syntax.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/base.css">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/syntax.css">
 
   <!-- Icons -->
-	<link rel="shortcut icon" type="image/x-icon" href="http://apievangelist.com/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="http://apievangelist.com/favicon.ico">
 	<link rel="icon" type="image/x-icon" href="http://apievangelist.com/favicon.ico">
 
+  <!-- JQuery -->
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="https://s3.amazonaws.com/kinlane-productions/js/mustache.js" type="text/javascript"></script>
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/csv-converter/blog.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog.xml">
 
-  <!--<link rel="stylesheet" href="/csv-converter/css/converter.css" type="text/css" media="screen" title="no title" charset="utf-8">-->
-
-  <script src="/csv-converter/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/csv-converter/js/CSVParser.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/csv-converter/js/DataGridRenderer.js" type="text/javascript" charset="utf-8"></script>
-
-  <script src="/csv-converter/js/base64.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/csv-converter/js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/csv-converter/js/oauth.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/csv-converter/js/github.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/csv-converter/js/utilities.js" type="text/javascript" charset="utf-8"></script>
+  <style>
+    .banner {
+    	background: #fff;
+    	position: relative;
+    	padding: 2px;
+      margin-bottom: 15px;
+    	box-shadow: 3px 3px 3px 3px rgba( 0, 0, 0, 0.1 );
+    	font-family: Open Sans;
+    	color: #444;
+    	-moz-border-radius: 2px;
+    	-webkit-border-radius: 2px;
+    	border-radius: 2px;
+    	}
+  </style>
 
 </head>

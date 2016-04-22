@@ -1,38 +1,132 @@
-title:        CSV Converter
+title:        Minimum Viable API Operations Definition
 url:          http://kinlane.github.io/csv-converter/
+logo:         http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png
+logo_width:   80
+logo_bottom_padding: 10
+
 version:      1.1.1
 author:
   name:       'Kin Lane'
   email:      'info@apievangelist.com'
-markdown:     rdiscount
-permalink:    pretty
-pygments:     true
+markdown:     kramdown
 
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title/
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
-paginate: 100
-paginate_path: "/blog/page:num"
-
-production_url : http://kinlane.github.io/csv-converter/
-
-BASE_PATH : http://kinlane.github.io/csv-converter/
+paginate: 150
+paginate_path: "/news/page:num"
 
 categories_path : /categories.html
 tags_path : /tags.html
 
-org: kinlane
-repo: csv-converter
-resource: csv-converter
-oauthio: qUDL4eZqKPFb41SwuWIYIwLR6jI
-
 # Masthead title
 masthead_link: http://kinlane.github.io/csv-converter/
-masthead_font_size: 75
-masthead_title: '{"CSV Converter"}'
+masthead_font_size: 65
+masthead_title: '{"Minimum Viable API"}'
 
 # Feature
-feature_title: API Design Providers Guide
-feature_link: http://apis.how/xzca4kr2wb
-feature_image_source: https://s3.amazonaws.com/kinlane-productions/whitepapers/3scale/report-image-api-design.png
-feature_image_width: 45
+feature_title: API Guide
+feature_link: http://apievangelist.com
+feature_image_source: https://s3.amazonaws.com/kinlane-productions/whitepapers/api-guides-loading.jpg
+feature_image_width: 40
+
+# Banner
+banner_title: API Evangelist
+banner_link: http://apievangelist.com
+banner_image_source: http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png
+banner_image_width: 60
+
+# Project
+project_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-design.png
+project_title: Minimum Viable API Operations Definition
+project_summary: This is my micro tool to help you achieve what I'd consider to be a minimum viable presence for your API operations. Answer any question that you can, and generate a report that you can consider as you are crafting your API management road map.
+project_footer: This application runs as a micro tool, which operates 100% client-side, running completely on a Jekyll website, hosted using Github, and Github pages. Visit the about page for more information, if you'd like to support this work feel free to invest and done. If you have any issues, or would like to leave a comment, you can do so via <a href="https://github.com/api-evangelist-tools/create-your-first-apis-json-file/issues">the project's Github repository</a>.
+
+# Navigation
+navigation:
+  - label1: Home
+    link1: /
+    size1: 70
+    extend: 0
+    label2:
+    link2:
+    size2: 0
+    padding: 0
+    decorate: 0
+  - label1: Blog
+    link1: /blog/
+    size1: 70
+    extend: 1
+    label2: RSS
+    link2: /blog.xml
+    size2: 60
+    padding: 2
+    decorate: 0
+  - label1: CSV to JSON
+    link1: /csv-converter/csv-to-json.html
+    size1: 70
+    extend: 0
+    label2:
+    link2:
+    size2: 0
+    padding: 0
+    decorate: 0
+  - label1: JSON to CSV
+    link1: /csv-converter/json-to-csv.html
+    size1: 70
+    extend: 0
+    label2:
+    link2:
+    size2: 0
+    padding: 0
+    decorate: 0
+  - label1: Comment / Issues
+    link1: https://github.com/kinlane/csv-converter/issues
+    size1: 70
+    extend: 0
+    label2:
+    link2:
+    size2: 0
+    padding: 0
+    decorate: 0
+  - label1: Return to API Evangelist Tools
+    link1: http://tools.apievangelist.com
+    size1: 70
+    extend: 0
+    label2:
+    link2:
+    size2: 10
+    padding: 5
+    decorate: 1
+
+# Footer Navigation
+footernavigation:
+  - label: API 100K View
+    link: http://apievangelist.com
+  - label: News
+    link: /news/
+  - label: Partners
+    link: http://apievangelist.com/partners/
+  - label: APIs.json
+    link: http://apisjson.org
+  - label: About Kin Lane
+    link: http://kinlane.com
+  - label: Branding Guidelines
+    link: http://apievangelist.com/branding-guidelines.html
+  - label: Contact
+    link: http://kinlane.com/contacts/
+
+# sponsors
+sponsors_margin_top: 3
+sponsors_padding_top: 3
+sponsors_json_url: https://s3.amazonaws.com/kinlane-productions/json/sponsors.json
+
+# support
+support_title: Invest & Support In This Micro Tool
+support_header: I depend on the support of my partners to fund my work as an independent analysts. I have been monitoring the world of APIs since July of 2010 through the support of my partners, and a handful of writing or consulting projects along the way. I work to make all my tooling as forkable, and dependent free as they possibly can, running 100%, or near 100% entirely client-side.
+support_footer: I pay my bills by consulting on API projects, and writing white papers and guides. You can find much of my research freely available across my website(s), but if you want to support my work, and get a single snapshot of it at any point in time. If you would like enhancements to this tool, or have a copy running on your own server, in your own envrionment let meknow. Thank you for your support, and feel free to ping me directly if you have more questions.
+
+# about
+about_title: About This Micro Tool
+about_header: I develop my apps and tools like I develop my APIs, as small bite-size pieces of code that do one thing, and does it well -- nothing more. This is one of my many micro tools which runs almost 100% on Github. They all use HTML, CSS, Jekyll, YAML, and JSON that runs using Jekyll via Github Pages. When necessary I use the Github API as the back-end storage for the API, taking advantage of the JSON and YAML capabilities of Jekyll, when hosted via Github.
+about_footer: I use my own approach to delivering these micro tools, but that approach employs simple, static content, and structured data via JSON and YAML. When I need more advanced compute than JavaScript affords me, I develop an API, but only as a last resort. My objective is to create tools that any can fork into their own environment, and runs in their own tooling stack. If you need help with any of my apps, or with developing apps in this way, feel free to leave an issue / comment.

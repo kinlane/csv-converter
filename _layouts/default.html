@@ -5,15 +5,6 @@
 
   <body>
 
-    <a href="https://github.com/kinlane/csv-converter"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-
-    <script type="text/javascript">
-      var $oAuth_Token = getUrlVar('oAuth_Token');
-      var $org = '{{ site.org }}';
-      var $repo = '{{ site.repo }}';
-      var $oauthio = '{{ site.oauthio }}';
-    </script>
-
     <header class="masthead">
       <div class="masthead-inner" align="center">
 
@@ -21,29 +12,25 @@
         <h2><a href="{{ site.masthead_link }}" style="font-size: {{ site.masthead_font_size }}%;">{{ site.masthead_title }}</a></h2>
 
         <!-- Feature -->
-        <a href="{{ site.feature_link }}" target="_blank">
-          <img src="{{ site.feature_image_source }}" width="{{ site.feature_image_width }}%" style="border: 1px solid #FFF;" title="{{ site.feature_title }}" />
+        <a href="{{ site.feature_link }}" target="_blank" id="feature_project_link">
+          <img id="feature_project_image" src="{{ site.feature_image_source }}" width="{{ site.feature_image_width }}%" style="border: 1px solid #FFF;" title="{{ site.feature_title }}" />
         </a>
 
         <div class="colophon">
           <ul class="colophon-links">
-            <li>
-              <a href="/csv-converter/index.html" id="home-nav">Home</a>
+            {% for nav in site.navigation %}
+            <li style="padding-top:{{ nav.padding }}px">
+              <a href="{{ nav.link1 }}" style="font-size: {{ nav.size1 }}%;">
+                {% if nav.decorate == 1 %} <span style="font-size: {{ nav.size1 }}">&#8668;</span>{% endif %}
+                {{ nav.label1 }}
+              </a>
+              {% if nav.extend == 1 %} <span style="font-size: {{ nav.size2 }}%;">(<a href="{{ nav.link2 }}">{{ nav.label2 }}</a>)</span>{% endif %}
             </li>
-            <li>
-              <a href="/csv-converter/blog/" id="blog-nav">Blog</a> <span style="font-size: 12px;">(<a href="/blog.xml">RSS</a>)</span>
-            </li>
-            <li>
-              <a href="/csv-converter/csv-to-json.html" id="converter-nav">CSV to JSON</a></span>
-            </li>
-            <li>
-              <a href="/csv-converter/json-to-csv.html" id="converter-nav">JSON to CSV</a></span>
-            </li>
-            <li style="padding-top: 20px;">
-              <a href="http://apievangelist.com" style="font-size: 75%;"><< Return to API Evangelist</a>
-            </li>
+            {% endfor %}
           </ul>
         </div>
+
+        <!-- Sponsorship -->
         <script id="parterListingTemplate" type="text/template">
             {% raw  %}
             <a href="{{url}}" target="_blank" title="{{title}}">
@@ -51,65 +38,40 @@
             </a>
             {% endraw %}
         </script>
-
-        <script type="text/javascript">
-        function listSponsors()
-            {
-            $.getJSON('https://s3.amazonaws.com/kinlane-productions/json/sponsors.json', function(data) {
-                $.each(data['sponsors'], function(key, val) {
-                var template = $('#parterListingTemplate').html();
-                var html = Mustache.to_html(template, val);
-                $('#partnerListingContainer').append(html);
-                });
-            });
-        }
-        </script>
-
-        <div id="partnerListingContainer" align="center" style="background-color:#FFF; margin-top: 45px; padding-top: 10px; width: 60%; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 3px solid #FFFFFF; margin-bottom: 7px;">
-
-		</div>
-
-        <script type="text/javascript">
-            listSponsors();
-        </script>
+        <div id="partnerListingContainer" align="center" style="background-color:#FFF; margin-top: {{ site.sponsors_margin_top }}px; padding: 15px; width: 50%; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 3px solid #FFFFFF; margin-bottom: 2px;"></div>
+        <!-- Sponsorship -->
 
       </div>
     </header>
 
     <div class="content container">
 
-      <p align="center">
-      	<a href="http://kinlane.github.io/csv-converter/">
-      		<img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/api-evangelist-csv-converter.png" align="center" width="50%" style="padding-bottom: 10px;" />
-      	</a>
-      </p>
+      <!-- Banner -->
+      <p align='center'><a href="{{ site.url }}" target="_blank" id="banner_project_link"><img id="banner_project_image" src="{{ site.banner_image_source }}" width="{{ site.banner_image_width }}%" title="{{ site.banner_title }}" class="banner" /></a></p>
 
       {{ content }}
 
+      <center><hr style="padding: 5px 5px 5px 5px; margin: 5px; width: 85%;" /></center>
   		<!-- 3scale -->
   		<p align="center">
     		<a href="http://apis.how/ake3nxbapm" target="_blank" title="API Infrastructure From 3Scale">
-    		    <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/empowered-by-3scale.png" width="350" style="padding-bottom: 25px;" />
+    		    <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/empowered-by-3scale.png" width="300" style="" />
     		</a>
   		</p>
   		<!-- 3scale -->
 
-	     <div class="footer">
-		    <ul>
-		    	<li><a href="/">Home</a></li>
-		    	<li><a href="/blog/">News</a></li>
-		    	<li><a href="/network">Network</a></li>
-		    	<li><a href="http://kinlane.com/about/">About</a></li>
-		    	<li><a href="http://apisjson.org">APIs.json</a></li>
-		    	<li><a href="/branding-guidelines.html">Branding Guidelines</a></li>
-		    	<li><a href="http://kinlane.com/contact/">Contact</a></li>
-		    </ul>
-		</div>
+      <div class="footer">
+        <ul>
+          {% for nav in site.footernavigation %}
+            <li><a href="{{ nav.link }}">{{ nav.label }}</a></li>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
 
-    </div>
+  </div>
 
 	<script type="text/javascript">
-
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-1119465-51']);
 	  _gaq.push(['_setDomainName', 'apievangelist.com']);
@@ -120,36 +82,6 @@
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-
-	  function checkLinkRot()
-	    {
-	    var linkArray = [];
-	    var links = document.getElementsByTagName("a");
-	    for(var i=0; i<links.length; i++) {
-	        linkArray.push(links[i].href);
-	    }
-	    url = "http://linkrot.api.laneworks.net/v1/links/";
-	    var myJsonString = JSON.stringify(linkArray);
-	    $.ajax({
-	        type: "POST",
-	        url: url,
-	        data: myJsonString,
-	        success: function (data) {
-	             $.each(data, function($Key,$Value) {
-	                $URL = $Value['URL'];
-	                $returnURL = $Value['returnURL'];
-	                var links = document.getElementsByTagName("a");
-	                for(var i=0; i<links.length; i++) {
-	                    if(links[i].href==$URL)
-	                        {
-	                        document.getElementsByTagName("a")[i].href=$returnURL;
-	                        }
-	                     }
-	             });
-	        }
-	    });
-	    }
-
 	</script>
 
 	<!-- Google Code for API Evangelist visitors -->
@@ -165,9 +97,78 @@
 	</script>
 	<noscript>
 	<div style="display:inline;">
-	<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/964245031/?value=1.000000&amp;label=U2foCJGT0wkQp-zkywM&amp;guid=ON&amp;script=0"/>
+	   <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/964245031/?value=1.000000&amp;label=U2foCJGT0wkQp-zkywM&amp;guid=ON&amp;script=0"/>
 	</div>
 	</noscript>
 
+  <script type="text/javascript">
+
+    // project view log
+  	$url = "http://project.api.kinlane.com/project/view/";
+  	$vlog = $.post($url, function() {});
+
+    // Feature Projects
+    function featureProjects()
+        {
+        $get_feature_project_url = "http://project.api.kinlane.com/project/feature/";
+
+        $.ajax({
+          url: $get_feature_project_url,
+          type:"GET",
+          success:function(data) {
+
+              $feature_title = data['feature_title'];
+              $feature_image = data['feature_image'];
+              $feature_url = data['feature_url'];
+              $("#feature_project_link").attr("href", $feature_url);
+              $("#feature_project_image").attr("src", $feature_image);
+              $("#feature_project_image").attr("title", $feature_title);
+            }
+          });
+        }
+    featureProjects();
+
+    // Banner Projects
+    function bannerProjects()
+        {
+        $get_banner_project_url = "http://project.api.kinlane.com/project/banner/";
+
+        $.ajax({
+          url: $get_banner_project_url,
+          type:"GET",
+          success:function(data) {
+              console.log(data);
+              $banner_title = data['banner_title'];
+              $banner_image = data['banner_image'];
+              $banner_url = data['banner_url'];
+
+                  console.log($banner_url);
+
+              $("#banner_project_link").attr("href", $banner_url);
+              $("#banner_project_image").attr("src", $banner_image);
+              $("#banner_project_image").attr("title", $banner_title);
+            }
+          });
+        }
+    bannerProjects();
+
+    // Sponsors
+    function listSponsors(){
+        $.getJSON('{{ site.sponsors_json_url }}', function(data) {
+            $.each(data['sponsors'], function(key, val) {
+            var template = $('#parterListingTemplate').html();
+            var html = Mustache.to_html(template, val);
+            $('#partnerListingContainer').append(html);
+            });
+        });
+      }
+
+    listSponsors();
+
+  </script>
+
+  <script src="https://s3.amazonaws.com/kinlane-productions/bootstrap/js/bootstrap.min.js"></script>
+
   </body>
+
 </html>
