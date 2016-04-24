@@ -55,14 +55,8 @@
 
       {{ content }}
 
-      <center><hr style="padding: 5px 5px 5px 5px; margin: 5px; width: 85%;" /></center>
-  		<!-- 3scale -->
-  		<p align="center">
-    		<a href="http://apis.how/ake3nxbapm" target="_blank" title="API Infrastructure From 3Scale">
-    		    <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/empowered-by-3scale.png" width="300" style="" />
-    		</a>
-  		</p>
-  		<!-- 3scale -->
+      <!-- Footer1 -->
+      <p align="center"><a href="{{ site.url }}" target="_blank" id="footer_project_link"><img id="footer_project_image" src="{{ site.footer_image_source }}" width="{{ site.footer_image_width }}%" title="{{ site.footer_title }}" class="fbanner" /></a></p><br />
 
       <div class="footer">
         <ul>
@@ -168,6 +162,26 @@
       }
 
     listSponsors();
+
+    // Footer Projects
+    function footerProjects()
+        {
+        $get_footer_project_url = "http://project.api.kinlane.com/project/footer/";
+
+        $.ajax({
+          url: $get_footer_project_url,
+          type:"GET",
+          success:function(data) {
+              $footer_title = data['footer_title'];
+              $footer_image = data['footer_image'];
+              $footer_url = data['footer_url'];
+              $("#footer_project_link").attr("href", $footer_url);
+              $("#footer_project_image").attr("src", $footer_image);
+              $("#footer_project_image").attr("title", $footer_title);
+            }
+          });
+        }
+    footerProjects();
 
   </script>
 
