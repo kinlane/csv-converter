@@ -16,17 +16,17 @@ function DataConverter(nodeId) {
 
   this.outputDataTypes        = [
                                 {"text":"HTML",                   "id":"html",             "notes":""},
-                                {"text":"JSON - Properties",      "id":"json",             "notes":""},
-                                {"text":"JSON - Column Arrays",   "id":"jsonArrayCols",    "notes":""},
+                                {"text":"JSON",      "id":"json",             "notes":""},
+                                /**{"text":"JSON - Column Arrays",   "id":"jsonArrayCols",    "notes":""},
                                 {"text":"JSON - Row Arrays",      "id":"jsonArrayRows",    "notes":""},
-                                {"text":"JSON - Dictionary",      "id":"jsonDict",         "notes":""},
+                                {"text":"JSON - Dictionary",      "id":"jsonDict",         "notes":""},**/
                                 {"text":"MySQL",                  "id":"mysql",            "notes":""},
-                                {"text":"PHP",                    "id":"php",              "notes":""},
+                                /**{"text":"PHP",                    "id":"php",              "notes":""},
                                 {"text":"Python - Dict",          "id":"python",           "notes":""},
-                                {"text":"Ruby",                   "id":"ruby",             "notes":""},
-                                {"text":"XML - Properties",       "id":"xmlProperties",    "notes":""},
-                                {"text":"XML - Nodes",            "id":"xml",              "notes":""},
-                                {"text":"XML - Illustrator",      "id":"xmlIllustrator",   "notes":""}];
+                                {"text":"Ruby",                   "id":"ruby",             "notes":""},**/
+                                {"text":"XML",       "id":"xmlProperties",    "notes":""};
+                                /**{"text":"XML - Nodes",            "id":"xml",              "notes":""},
+                                {"text":"XML - Illustrator",      "id":"xmlIllustrator",   "notes":""}];**/
 
   this.outputDataType         = "none";
 
