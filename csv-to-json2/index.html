@@ -1,0 +1,100 @@
+---
+layout: page
+title: CSV to JSON
+---
+
+<script src="/csv-converter/js/converter2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/csv-converter/js/Controller.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+  function showSettings()
+    {
+    if(document.getElementById("adjust-settings").style.display == 'none')
+      {
+      document.getElementById("adjust-settings").style.display = '';
+      }
+    else
+      {
+      document.getElementById("adjust-settings").style.display = 'none';
+      }
+    }
+
+  function uploadCSV(f) {
+
+      var reader = new FileReader();
+      reader.readAsText(f);
+      reader.onload = function() {
+
+      var text = reader.result;
+      document.getElementById('uploadfilename').value = f.name;
+      var out = document.getElementById("dataInput");
+      out.innerHTML = "";
+      out.appendChild(document.createTextNode(text));
+
+      oAuth_Token = document.getElementById('oAuth_Token').value;
+      //alert(oAuth_Token);
+      if(oAuth_Token!='')
+      	{
+      	document.getElementById("save").style.display = '';
+      	}
+
+      $('#dataSelector').val('json');
+      $("#dataSelector").change();
+      }
+      reader.onerror = function(e) {
+          console.log("Error", e);
+      };
+  }
+
+</script>
+<div id='settings'>
+  <form id='settingsForm' style="padding: 0px; margin: 0px;">
+
+    <h3>Upload a Comma Separated Value (CSV) file (<a href="#" onclick="showSettings();">advanced settings</a>):</h3>
+    <div style="border: 1px solid #FFF; padding: 0px; margin-bottom: 10px;">
+      <input type="hidden" name="oAuth_Token" id="oAuth_Token" value="" />
+      <input type="hidden" name="uploadfilename" id="uploadfilename" value="" />
+      <input type="file" onchange="uploadCSV(this.files[0])"></input>
+    </div>
+
+    <div id="login" style="display: none;">
+      <p align="center"><a href="http://kinlane.github.io/csv-converter/oauth.html">Login</a> (you will need to be added to Gitub repo)</p>
+    </div>
+    <div id="save" style="display: none;">
+      <p align="center"><a href="#" onclick="saveConversion();">Save</a></p>
+    </div>
+
+    <div id="adjust-settings" style="border: 1px solid #FFF; padding: 5px 0px 5px 25px; display: none;">
+      <h3>Adjust Settings:</h3>
+       <p>
+         Delimiter:
+         <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterAuto'   value="auto" checked/> Auto</label>
+         <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterComma'  value="comma" /> Comma</label>
+         <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterTab'    value="tab" /> Tab</label>
+      </p>
+
+      <p>
+        Decimal Sign:
+         <label><input class="settingsElement" type="radio" name="decimal" id='decimalDot'   value="dot" checked/> Dot</label>
+         <label><input class="settingsElement" type="radio" name="decimal" id='decimalComma'  value="comma" /> Comma</label>
+      </p>
+
+      <p><label><input class="settingsElement" type="checkbox" name="" value="" id="headersProvidedCB" checked /> First row is the header</label></p>
+      <div class="settingsGroup">
+        <p>Transform: <label><input class="settingsElement" type="radio" name="headerModifications" value="downcase" id='headersDowncase' /> downcase</label>
+        <label><input class="settingsElement" type="radio" name="headerModifications" id='headersUpcase' value="upcase" /> upcase</label>
+        <label><input class="settingsElement" type="radio" name="headerModifications" id='headersNoTransform' value="none" checked /> none</label></p>
+      </div>
+
+      <p><label><input class="settingsElement" type="checkbox" name="some_name" value="" id="includeWhiteSpaceCB" checked /> Include white space in output</label></p>
+      <div class="settingsGroup">
+        <p>Indent with: <label><input class="settingsElement" type="radio" name="indentType" value="tabs" id='includeWhiteSpaceTabs'/> tabs</label> <label><input class="settingsElement" type="radio" name="indentType" value="spaces" id='includeWhiteSpaceSpaces' checked/> spaces</label></p>
+      </div>
+
+    </div>
+  </form>
+
+  <div id='converter' class=''></div></div>
+
+<p><br /></p>
+<p align="center"><a href="https://shancarter.github.io/mr-data-converter/"><strong>Thank You Mr. Data Converter!</strong></a></p>
